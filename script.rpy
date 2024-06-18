@@ -1,10 +1,34 @@
-# Game by: Kouda_Ha
-# Nairda Nun Chapter Zero Demo
+# Game by: Moop Open-source Games
+# Nairda Nun - Chapter Zero (Demo)
 
 # Game Demo summary: Introduction to Nairda Nun, the private detective.
 # Based in the 90's, general crime type genre,
 # all characters are animal-based, proportions and style similar to Sylvanian
 # Families.
+
+# -----------------------------------------------------------------------------
+# Game Contents:
+
+# SCENE 00 - Introduction
+# 1. Shows Nairda Nun the frog solving a case
+# 2. Shows Nairda Nun return home, introduces Tony the Beaver
+# 3. Very mild introduction of Ezekiel and a feud between them and Tony
+
+# SCENE 01 - Therapy and backstory told at Therapy
+# 1. NN goes to the Therapist and talks about how their police detective partner
+# who died when NN took their first day off work sick in over 30 years.
+# 2. Therapist in current time explaining NN's OCD
+
+# SCENE 02 - Murder Scene
+# 1. Call to go to crime scene
+# 2. Murder crime scene and investigation
+# 3. Win / Fail the investigation
+
+# Scene 03 - Ending/s
+# 1. Win/Lose ending scene
+# Demo End.
+
+# -----------------------------------------------------------------------------
 
 # The game/script starts here
 
@@ -12,7 +36,6 @@
 # 1. Shows Nairda Nun the frog solving a case
 # 2. Shows Nairda Nun return home, introduces Tony the Beaver
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
-
 label start:
     scene apartmenthalls
     play music "audio/cafe.mp3"
@@ -103,9 +126,9 @@ label start:
     nun "I just... need to check if the oven is on"
     hubby "Insufferable!"
 
-# SCENE 01 - "Six Months Earlier" NN Flashback at Therapy
-# 1. NN goes to the Therapist and talks about how their police detective partner who died when NN
-# took their first day off work sick in over 30 years.
+# SCENE 01 - Therapy and backstory told at Therapy
+# 1. NN goes to the Therapist and talks about how their police detective partner
+# who died when NN took their first day off work sick in over 30 years.
 # 2. Therapist in current time explaining NN's OCD
 
     # NEED THERAPIST OFFICE SCENE IMAGE RECEPTION && OFFICE ITSELF
@@ -165,11 +188,21 @@ label start:
     nun "It doesn't bother me, it just looks untidy, you don't want people to think your
     therapy office is untidy... It'll look unprofessional..."
     "Now that Nairda has justified his compulsion the therapy continues"
-    # FLASHBACK START
-    "Six Months Earlier"
+    # BACK STORY START
+    drk "Let's talk about your partner"
+    nun "My partner's fine, he'll be picking me up after this appointment"
+    drk "No, I meant your partner when you were a detective on the force"
+    "Nairda looks perplexed, and remembers the case he never was never able to solve..."
+    # BACK STORY PARTNER DEATH
+    "One year ago"
+    "Nairda looks as bad as he feels, slumped over the side of the bed he tries to
+    pick the telephone up off the landline"
+    nun ""
 
-
-# Scene THREE : Murder Scene
+# SCENE 02 - Murder Scene
+# 1. Call to go to crime scene
+# 2. Murder crime scene and investigation
+# 3. Win / Fail the investigation
     scene messhall
 # Start of correct and incorrect answers in investigation
     "next scene time"
@@ -246,13 +279,20 @@ label start:
             jump good_end
         elif correct < 3:
             jump bad_end
-# ENDINGS
+
+
+# Scene 03 - Ending/s
+# 1. Win/Lose ending scene
+# Demo End.
+
+# GOOD ENDING
 label good_end:
     scene lab
     show nun happy at left with dissolve
     nun "Good End"
     return
 
+# BAD ENDING
 label bad_end:
     scene apartmenthalls
     show nun happy at right with dissolve
@@ -261,5 +301,6 @@ label bad_end:
     ##play sound "audio/badEnd2.mp3"
     return
 
+# DEMO END
     # This is the end of the game.
     return
