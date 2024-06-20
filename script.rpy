@@ -41,7 +41,6 @@ label start:
     play music "audio/cafe.mp3"
     ##play sound "audio/Narrator1.mp3"
     show nun n at left with dissolve
-    show drwolfe n at right with dissolve
 
     "Looking at the dead body, Nairda whispers to themself"
     nun "I think I left my oven on..."
@@ -76,7 +75,7 @@ label start:
     nun "Who'd be able to use that? A giant, that's who!"
     "Nairda smelled the air again"
     nun "A dog. The murderer is a dog."
-    "Looking at the floor next to the window, Monknt tilts their head"
+    "Looking at the floor next to the window, Nairda tilts their head"
     nun "Irish Wolfhound."
     po "Her ex was an Irish Wolfhound!"
     hubby "Jane Doe the cat was dating a dog? How odd!"
@@ -121,7 +120,7 @@ label start:
     "Naida's partner comes running up behind them"
     scene workhalls
     show nun happy at right
-    show tony angry at left
+    show drwolfe n at left
     hubby "How did you get home before me? I drove and you RAN!?!"
     nun "I just... need to check if the oven is on"
     hubby "Insufferable!"
@@ -139,7 +138,7 @@ label start:
     "The receptionist looks up"
     nun "It's 9 o'clock."
     "The receptionist gives a known look and sighs quietly"
-    r "Yes, Mr Nun. I'm sure he'll be ready for you in a minute"
+    r "Yes, Mr Nun. I'm sure they'll be ready for you in a minute"
     nun "But my appointment starts at 9am, and it's 9 o'clock."
     "She puts one of her hands over her face"
     r "Shall we call your husband? He'll know what to do, whiles we wait for Dr Krieger"
@@ -156,9 +155,9 @@ label start:
     r "Yes, 3 minutes late, so we thought we'd call you!"
     "She hands the phone over to Nairda"
     nun "Hello hubby, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
-    I'm not sure what he could be doing but he knows it's 9am..."
+    I'm not sure what they could be doing but she knows it's 9am..."
     nun "I bet it's Bruce!"
-    "Nairda looks ar the receptionist"
+    "Nairda looks at the receptionist"
     nun "Is it? Is it Bruce?"
     "She looks away"
     r "You know I'm not allowed to discuss other patients with you, Mr Nun."
@@ -179,7 +178,7 @@ label start:
     "Nairda notices a cushion tilted to the side, whiles the other cushions on the sofa across
     the room are straight and evenly spaced apart"
     nun "Is that on purpose?"
-    "Dr Krieger doesn't clock the sofa cushion until he turns to see it"
+    "Dr Krieger doesn't clock the sofa cushion until she turns to see it"
     drk "It wasn't on purpose no. Would you like me to fix it?"
     nun "No no, it's fine. It doesn't bother me, it's fine..."
     "Nairda tries to look away but the compusion to correct the sofa is killing him"
@@ -194,15 +193,79 @@ label start:
     drk "No, I meant your partner when you were a detective on the force"
     "Nairda looks perplexed, and remembers the case he never was never able to solve..."
     # BACK STORY PARTNER DEATH
+    scene messhall
     "One year ago"
     "Nairda looks as bad as he feels, slumped over the side of the bed he tries to
     pick the telephone up off the landline"
-    nun ""
+    nun "I'm sorry, friend. I just can't join you at work today"
+    np "Don't worry about it, you haven't taken a day off sick in over 30 years,
+    you are allowed to take a break every once in a while, you know!"
+    np "I'll come down and grab the keys, I can't be bothered dealing with public transport
+    with all the horror stories I hear about the metro"
+    "Nairda's detective partner laughs softly"
+    np "Do you need anything bringing down whiles I'm here?"
+    "Nairda tries to look around groggily, then remembers he's out of milk and cereal"
+    nun "Not really, but could you bring down some milk and cereal? I might try to have breakfast later"
+    "His detective partner laughs again"
+    np "You and your cereal..."
+    np "You'll look like a bowl of cereal if you keep this up!"
+    np "I'll bring some ceral and milk down, and a few tins of soup too! Soup will do you good
+    when you're sick."
+    "Nairda is too weak to argue his hatred of eating soup"
+    nun "Thanks, I appreciate this."
+    "They both hang up the phone and what felt like moments later Nairda's door opens and his
+    partner walks inside with a goodie bag of ailments."
+    "Along with some beloved milk and ceral for Nairda"
+    np "Here you go... oh wow you look awful! You really are sick!"
+    "Nairda is not sure whether to classify that reaction as a concern or an insult"
+    nun "..."
+    np "I'll leave it over here for you, and don't get up. The milk will last a few hours out of the fridge.
+    So I might as well leave it next to you with a bowl for when you're ready to try to eat something."
+    "They grab a bowl and spoon out of the kitchen and place it by Nairda's sofa where he currently resides."
+    nun "Thanks, I appreciate this..."
+    "Nairda says weakly"
+    np "You're welcome, now where are the car keyssssssss? There!"
+    "They pick up the keys and head towards the door, waving the keys behind his head as they walk away"
+    np "Get well soon, Bestie! I love you!"
+    "Nairda starts to have a coughing fit as the door closes"
+    nun "I lo... love you too.. aha..."
+    "That was the last time they ever saw each other"
+    scene emptygym
+    "Nairda stops recalling the story, scratching at his hands to clean them."
+    drk "I think that's enough for today"
+    drk "You've done good! I think we're making some real progress. I know it's hard but
+    recalling these things can help you to move on and get over.."
+    "Nairda cuts them off"
+    nun "I can't get over it!"
+    "Dr Kreiger regrets her words, knowing it wasn't the best way to put it"
+    drk "No, I'm sorry... I shouldn't have worded it like that it was insensitive,"
+    drk "I'm just so used to working on the five stages of grief and it's been a year since the
+    accident"
+    drk "I'm just concerned that we never discuss it and, you might still be at stage one..."
+    "The town hall clock dings in the distance"
+    drk "Ah, that time already? Well, I look forward to seeing you again soon. Try to take it easy
+    and we'll pick up where we left off on Wednesday."
+    "Nairda leaves the office, and gets into his husband's car"
+    hubby "How did therapy go?"
+    "Nairda looks down to towards the car mat"
+    nun "Can we go home?"
+    "His husband can see it was a hard session"
+    hubby "Of course! Let's go home."
+
+# Getting home and watching a movie or something before bedtime and the next day
+
+    "SCENE END"
+
+
 
 # SCENE 02 - Murder Scene
 # 1. Call to go to crime scene
 # 2. Murder crime scene and investigation
+# -- Stolen diamond/crystal opal, mace used to break the glass, opal had significant
+# historical backstory.
 # 3. Win / Fail the investigation
+
+
     scene messhall
 # Start of correct and incorrect answers in investigation
     "next scene time"

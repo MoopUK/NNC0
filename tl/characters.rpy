@@ -9,8 +9,10 @@ default correct = 0
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
 # Husband of Nun
-define hubby = Character("Partner", color="#FF0000")#Red
+define hubby = Character("Strudle", color="#FF0000")#Red
 
+# Late Police Detective Partner of Nun
+define np = Character("Nun's Partner", color="#99C55E")
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
@@ -22,7 +24,14 @@ define po = Character("Police Officer", color="#800000")#maroon
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
 
-#images for characters
+# images for characters and facial expressions
+# General expressions:
+# - neutral face
+# - sad/crying
+# - happy
+# - angry
+# - confused
+# - embarrassed/shy
 
 # Nun (Main Character)
 image nun n:
@@ -40,6 +49,18 @@ image nun shy:
     "nunshy"
     zoom 0.5
 
+# Strudle Nun (Nairda's husband)
+image snun n:
+    "nunneutral" # Placeholder
+
+# Dr Krieger (Therapist)
+image drk n:
+    "nunshy" #placetolder
+
+# Therapy Receptionist
+image rec n:
+    "nunshy" # Placeholder
+
 # Tony (apartment neighbour)
 image tony n:
     "tonyneutral"
@@ -50,7 +71,11 @@ image tony angry:
 image tony sad:
     "tonysad"
 
-# Tony (apartment neighbour)
+# Ezekiel (Tony's nemesis and vice versa at apartments)
+image ez n:
+    "tonyneutral" #placeholder
+
+# Dr Wolfe (Mortician)
 image drwolfe n:
     "doctorwolfneutral"
     zoom 0.7
@@ -66,3 +91,15 @@ image drwolfe sad:
 image drwolfe happy:
     "doctorwolfhappy"
     zoom 0.8
+
+# Chief (Police chief)
+image chief n:
+    "doctorwolfhappy" #placeholder, might be entirely unneeded, might not show chief
+
+# Harry Hare (arrogant police detective)
+image hare n:
+    "nunsad" # placeholder
+
+# Bruce (Nairda's nemesis at therapy)
+image bruce n:
+    "nunsad" # placeholder, might be entirely unneeded, might not show Bruce
