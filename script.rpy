@@ -37,6 +37,12 @@
 # 2. Shows Nairda Nun return home, introduces Tony the Beaver
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
+    scene screenstart
+    "Any similarities to real events are purely coincidental."
+    "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
+    # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
+    scene screenstart1
+    "Only fake ones."
     scene apartmenthalls
     play music "audio/cafe.mp3"
     ##play sound "audio/Narrator1.mp3"
@@ -108,7 +114,7 @@ label start:
     "How was work, Mr Nairda? Did you solve any cases?"
     show nun happy at right
     nun "I did actually! But I needed to return home, I think I left the oven on..."
-    "Tony's head suddenly snaps upwards, the noise from the pipes after someone flushed their toilet caused them to make the sound of running water"
+    "Tony's head suddenly snaps upwards, the noise from the pipes after someone flushing their toilet caused them to make the sound of running water"
     show tony angry
     t "ARGH! WATER! That DAMN EZEKIEL! I've got to go Nairda! I have to stop the water!"
     scene workhalls
@@ -123,6 +129,7 @@ label start:
     show drwolfe n at left
     hubby "How did you get home before me? I drove and you RAN!?!"
     nun "I just... need to check if the oven is on"
+    show drwolfe angry at left
     hubby "Insufferable!"
 
 # SCENE 01 - Therapy and backstory told at Therapy
@@ -225,11 +232,18 @@ label start:
     nun "Thanks, I appreciate this..."
     "Nairda says weakly"
     np "You're welcome, now where are the car keyssssssss? There!"
-    "They pick up the keys and head towards the door, waving the keys behind his head as they walk away"
+    "They pick up the keys and head towards the door, waving the keys behind them as they walk away"
     np "Get well soon, Bestie! I love you!"
     "Nairda starts to have a coughing fit as the door closes"
     nun "I lo... love you too.. aha..."
+    "..."
     "That was the last time they ever saw each other"
+#    # Next part of this story for later:
+#    # Nairda is to wake up several hours later with banging on the door and dozens of missed calls from everyone
+#    # their partner didn't die immediately, but in hospital, whiles Nun was still sleeping off their illness
+#    # They were surrounded by everyone except Nairda. So heavy guilt encompasses him and the phobia of being ill
+#    # is so extreme his OCD goes into overdrive.
+
     scene emptygym
     "Nairda stops recalling the story, scratching at his hands to clean them."
     drk "I think that's enough for today"
@@ -238,7 +252,7 @@ label start:
     "Nairda cuts them off"
     nun "I can't get over it!"
     "Dr Kreiger regrets her words, knowing it wasn't the best way to put it"
-    drk "No, I'm sorry... I shouldn't have worded it like that it was insensitive,"
+    drk "No, I'm sorry... I shouldn't have worded it like that it was insensitive"
     drk "I'm just so used to working on the five stages of grief and it's been a year since the
     accident"
     drk "I'm just concerned that we never discuss it and, you might still be at stage one..."
@@ -252,11 +266,11 @@ label start:
     "His husband can see it was a hard session"
     hubby "Of course! Let's go home."
 
+
+    "Next part being at home and getting ready for bed or what not"
 # Getting home and watching a movie or something before bedtime and the next day
 
     "SCENE END"
-
-
 
 # SCENE 02 - Murder Scene
 # 1. Call to go to crime scene

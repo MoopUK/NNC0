@@ -39,67 +39,183 @@ image nun n:
 image nun sad:
     "nunsad"
     zoom 0.5
+image nun happy:
+    "nunhappy"
+    zoom 0.5
 image nun angry:
     "nunangry"
     zoom 0.5
-image nun happy:
-    "nunhappy"
+image nun confused:
+    "nunneutral"
     zoom 0.5
 image nun shy:
     "nunshy"
     zoom 0.5
 
-# Strudle Nun (Nairda's husband)
+# Strudle Nun (Nairda's husband) PLACEHOLDERS REPLACEMENT NEEDED
 image snun n:
-    "nunneutral" # Placeholder
+    "nunneutral"
+image snun sad:
+    "nunsad"
+    zoom 0.5
+image snun happy:
+    "nunhappy"
+    zoom 0.5
+image snun angry:
+    "nunangry"
+    zoom 0.5
+image snun confused:
+    "nunneutral"
+    zoom 0.5
+image snun shy:
+    "nunshy"
+    zoom 0.5
 
-# Dr Krieger (Therapist)
+# Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
-    "nunshy" #placetolder
+    "nunshy"
+image drk sad:
+    "nunsad"
+    zoom 0.5
+image drk happy:
+    "nunhappy"
+    zoom 0.5
+image drk angry:
+    "nunangry"
+    zoom 0.5
+image drk confused:
+    "nunneutral"
+    zoom 0.5
+image drk shy:
+    "nunshy"
+    zoom 0.5
 
-# Therapy Receptionist
+# Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
 image rec n:
-    "nunshy" # Placeholder
+    "nunshy"
+image rec sad:
+    "nunsad"
+    zoom 0.5
+image rec happy:
+    "nunhappy"
+    zoom 0.5
+image rec angry:
+    "nunangry"
+    zoom 0.5
+image rec confused: #NEEDED
+    "nunneutral"
+    zoom 0.5
+image rec shy:
+    "nunshy"
+    zoom 0.5
 
 # Tony (apartment neighbour)
 image tony n:
     "tonyneutral"
-image tony shy:
+image tony sad:
+    "tonysad"
+image tony happy: #NEEDED
     "tonyshy"
 image tony angry:
     "tonyangry"
-image tony sad:
-    "tonysad"
+image tony confused: #NEEDED
+    "tonyshy"
+image tony shy:
+    "tonyshy"
 
-# Ezekiel (Tony's nemesis and vice versa at apartments)
+# Ezekiel (Tony's nemesis and vice versa at apartments) PLACEHOLDERS REPLACEMENTS NEEDED
 image ez n:
-    "tonyneutral" #placeholder
+    "tonyneutral"
+    zoom 0.5
+image ez sad:
+    "nunsad"
+    zoom 0.5
+image ez happy:
+    "nunhappy"
+    zoom 0.5
+image ez angry:
+    "nunangry"
+    zoom 0.5
+image ez confused:
+    "nunneutral"
+    zoom 0.5
+image ez shy:
+    "nunshy"
+    zoom 0.5
 
 # Dr Wolfe (Mortician)
 image drwolfe n:
     "doctorwolfneutral"
     zoom 0.7
-image drwolfe shy:
-    "drwolfshy"
-    zoom 0.8
-image drwolfe angry:
-    "drwolfangry"
-    zoom 0.8
 image drwolfe sad:
     "drwolfsad"
     zoom 0.8
 image drwolfe happy:
     "doctorwolfhappy"
     zoom 0.8
+image drwolfe angry:
+    "drwolfangry"
+    zoom 0.8
+image drwolfe confused: #NEEDED
+    "nunneutral"
+    zoom 0.5
+image drwolfe shy:
+    "drwolfshy"
+    zoom 0.8
 
-# Chief (Police chief)
+# Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
 image chief n:
-    "doctorwolfhappy" #placeholder, might be entirely unneeded, might not show chief
+    "doctorwolfhappy"
+image chief sad:
+    "nunsad"
+    zoom 0.5
+image chief happy:
+    "nunhappy"
+    zoom 0.5
+image chief angry:
+    "nunangry"
+    zoom 0.5
+image chief confused:
+    "nunneutral"
+    zoom 0.5
+image chief shy:
+    "nunshy"
+    zoom 0.5
 
-# Harry Hare (arrogant police detective)
+# Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
 image hare n:
-    "nunsad" # placeholder
+    "nunsad"
+image hare sad:
+    "nunsad"
+    zoom 0.5
+image hare happy:
+    "nunhappy"
+    zoom 0.5
+image hare angry:
+    "nunangry"
+    zoom 0.5
+image hare confused:
+    "nunneutral"
+    zoom 0.5
+image hare shy:
+    "nunshy"
+    zoom 0.5
 
-# Bruce (Nairda's nemesis at therapy)
+# Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
 image bruce n:
-    "nunsad" # placeholder, might be entirely unneeded, might not show Bruce
+    "nunsad"
+image hare sad:
+    "nunsad"
+    zoom 0.5
+image hare happy:
+    "nunhappy"
+    zoom 0.5
+image hare angry:
+    "nunangry"
+    zoom 0.5
+image hare confused:
+    "nunneutral"
+    zoom 0.5
+image hare shy:
+    "nunshy"
+    zoom 0.5
