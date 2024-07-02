@@ -45,18 +45,24 @@ label start:
     "Only fake ones."
     scene apartmenthalls
     play music "audio/cafe.mp3"
-    ##play sound "audio/Narrator1.mp3"
+    ##play sound "audio/ SOUND NAME .mp3"
     show nun n at left with dissolve
 
     "Looking at the dead body, Nairda whispers to themself"
     nun "I think I left my oven on..."
     "Their partner sighs deeply"
+    show snun angry at right with dissolve
     hubby "No no... I turned everything off before we left"
     "Nairda looks around the room, then turns back to their partner"
+    show nun sad at left with dissolve
     nun "Are you sure?"
+    show snun happy at right with dissolve
     hubby "Yes, I'm sure. I even disconnected the gas for you so you don't have to worry about anything"
+    show nun n at left with dissolve
     nun "Well, in that case..."
+    scene apartmenthalls
     "A deep pause entered the apartment, everyone stopped talking to watch Nairda solve the case..."
+    show nun n at left with dissolve
     nun "The murderer wore slippers to not leave paw prints...
     They were waiting for her for at least an hour, and smoked! Horribly cheap cigarettes, terrible stuff..."
     "They continue"
@@ -65,17 +71,23 @@ label start:
     it's way too tall for a cat! The killer has to be at least 2ft 4... very tall, not a frog..."
     scene apartmenthalls
     show nun n at left with dissolve
+    show drwolfe confused at right with dissolve
     po "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
     nun "Yes, we do."
     "Nairda passes her passport and several opened letter off to table to the police officer"
     nun "It's Jane Doe"
+    show drwolfe sad at right with dissolve
     "The officer looks at the victim's passport and opened letters"
     po "Damn, imagine calling you child the general term used for when we can't ID someone...
     They must have hated her"
     nun "Can I finish? I think I left my oven on, so I want to make this quick"
+    show drwolfe shy at right with dissolve
     po "Oh, yeah... sorry... How do you know they used the laptop?"
+    show snun angry at right
     hubby "It isn't on! And I turned off the gas, remember?"
     "Everyone looks at Nairda confused"
+    scene apartmenthalls
+    show nun n at left
     "Nairda Continues"
     nun "The computer is wiped down clean, and the murderer is tall! At least 2 ft 4! Look at the computer chair!"
     nun "Who'd be able to use that? A giant, that's who!"
@@ -83,18 +95,26 @@ label start:
     nun "A dog. The murderer is a dog."
     "Looking at the floor next to the window, Nairda tilts their head"
     nun "Irish Wolfhound."
+    show drwolfe n at right with dissolve
     po "Her ex was an Irish Wolfhound!"
+    show snun confused
     hubby "Jane Doe the cat was dating a dog? How odd!"
     po "It's more common that you'd think actually..."
+    scene apartmenthalls
     "Pointing to dirt on the floor, and a clump of freshly shed fur, Nairda knew they found the murderer"
+    show nun n at left with dissolve
     nun "That fur belongs to an Irish Wolfhound, and it was raining earlier. There's a faint smell of wet
     dog on the computer chair. He must have needed something from the computer but..."
+    show drwolfe n at right with dissolve
     po "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
     "Nairda interrupted the police officer"
     nun "No, no no no I can't! I left the oven on! I can smell the gas from here!"
     "Nairda quickly leaves the apartment whiles their partner follows behind"
+    scene apartmenthalls
+    show snun angry
     hubby "You can NOT smell gas! We live across town! And I TURNED OFF YOUR GAS SUPPLY BEFORE WE
     LEFT! YOU'RE INSUFFERABLE!"
+    scene apartmenthalls
     "The police officers and detectives in the apartment look in shock and awe"
     d "So that's Nairda huh?"
     po "Yeah, both impressive and kind of pathetic when you think about it"
@@ -126,10 +146,10 @@ label start:
     "Naida's partner comes running up behind them"
     scene workhalls
     show nun happy at right
-    show drwolfe n at left
+    show snun n at left
     hubby "How did you get home before me? I drove and you RAN!?!"
     nun "I just... need to check if the oven is on"
-    show drwolfe angry at left
+    show snun angry at left
     hubby "Insufferable!"
 
 # SCENE 01 - Therapy and backstory told at Therapy
@@ -216,13 +236,13 @@ label start:
     "His detective partner laughs again"
     np "You and your cereal..."
     np "You'll look like a bowl of cereal if you keep this up!"
-    np "I'll bring some ceral and milk down, and a few tins of soup too! Soup will do you good
+    np "I'll bring some cereal and milk down, and a few tins of soup too! Soup will do you good
     when you're sick."
     "Nairda is too weak to argue his hatred of eating soup"
     nun "Thanks, I appreciate this."
     "They both hang up the phone and what felt like moments later Nairda's door opens and his
     partner walks inside with a goodie bag of ailments."
-    "Along with some beloved milk and ceral for Nairda"
+    "Along with some beloved milk and cereal for Nairda"
     np "Here you go... oh wow you look awful! You really are sick!"
     "Nairda is not sure whether to classify that reaction as a concern or an insult"
     nun "..."

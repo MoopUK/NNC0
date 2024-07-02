@@ -46,7 +46,7 @@ image nun angry:
     "nunangry"
     zoom 0.5
 image nun confused:
-    "nunneutral"
+    "nunconfused"
     zoom 0.5
 image nun shy:
     "nunshy"
@@ -54,22 +54,23 @@ image nun shy:
 
 # Strudle Nun (Nairda's husband) PLACEHOLDERS REPLACEMENT NEEDED
 image snun n:
-    "nunneutral"
+    "snunneutral"
+    zoom 0.2
 image snun sad:
-    "nunsad"
-    zoom 0.5
+    "snunsad"
+    zoom 0.2
 image snun happy:
-    "nunhappy"
-    zoom 0.5
+    "snunhappy"
+    zoom 0.2
 image snun angry:
-    "nunangry"
-    zoom 0.5
+    "snunangry"
+    zoom 0.2
 image snun confused:
-    "nunneutral"
-    zoom 0.5
+    "snunconfused"
+    zoom 0.2
 image snun shy:
-    "nunshy"
-    zoom 0.5
+    "snunshy"
+    zoom 0.2
 
 # Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
@@ -145,22 +146,22 @@ image ez shy:
 
 # Dr Wolfe (Mortician)
 image drwolfe n:
-    "doctorwolfneutral"
+    "drwolfeneutral"
     zoom 0.7
 image drwolfe sad:
-    "drwolfsad"
+    "drwolfesad"
     zoom 0.8
 image drwolfe happy:
-    "doctorwolfhappy"
+    "doctorwolfehappy"
     zoom 0.8
 image drwolfe angry:
-    "drwolfangry"
+    "drwolfeangry"
     zoom 0.8
 image drwolfe confused: #NEEDED
-    "nunneutral"
+    "drwolfeconfused"
     zoom 0.5
 image drwolfe shy:
-    "drwolfshy"
+    "drwolfeshy"
     zoom 0.8
 
 # Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
