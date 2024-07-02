@@ -123,7 +123,7 @@ label start:
 
     "Case Closed"
 
-    scene workhalls
+    scene apartmentdoor
     "Nairda Nun returns to his apartment building and see's his neighbour outside"
     show nun happy
     nun "Hello, Tony!"
@@ -137,14 +137,14 @@ label start:
     "Tony's head suddenly snaps upwards, the noise from the pipes after someone flushing their toilet caused them to make the sound of running water"
     show tony angry
     t "ARGH! WATER! That DAMN EZEKIEL! I've got to go Nairda! I have to stop the water!"
-    scene workhalls
+    scene apartmentdoor
     show nun n
     "Looking into Tony's apartment, you see a makeshift dam covering the walls and ceiling"
     "As the door slams shut you hear a banging on the cieling and murmuring, along with a faint 'fuck you, Tony!' coming from above"
     show nun sad
     nun "And I thought I had issues..."
     "Naida's partner comes running up behind them"
-    scene workhalls
+    scene apartmentdoor
     show nun happy at right
     show snun n at left
     hubby "How did you get home before me? I drove and you RAN!?!"
@@ -198,15 +198,19 @@ label start:
     nun "Bruce?"
     drk "You know I can't discuss other patients with you Nairda... Now come on in and let's get
     started!"
+    "They both enter the therapy office and take a seat"
 
     # THERAPY START
+    scene messhall
+    show nun n at right
+    show drk n at left
     drk "So, how's things?"
     nun "Things have been good! Very goo..."
     "Nairda notices a cushion tilted to the side, whiles the other cushions on the sofa across
     the room are straight and evenly spaced apart"
     nun "Is that on purpose?"
     "Dr Krieger doesn't clock the sofa cushion until she turns to see it"
-    drk "It wasn't on purpose no. Would you like me to fix it?"
+    drk "It wasn't on purpose, no. Would you like me to fix it?"
     nun "No no, it's fine. It doesn't bother me, it's fine..."
     "Nairda tries to look away but the compusion to correct the sofa is killing him"
     nun "It's just... it doesn't bother me but it looks untidy..."
@@ -220,7 +224,7 @@ label start:
     drk "No, I meant your partner when you were a detective on the force"
     "Nairda looks perplexed, and remembers the case he never was never able to solve..."
     # BACK STORY PARTNER DEATH
-    scene messhall
+    scene apartmentlongshot
     "One year ago"
     "Nairda looks as bad as he feels, slumped over the side of the bed he tries to
     pick the telephone up off the landline"
@@ -243,14 +247,14 @@ label start:
     "They both hang up the phone and what felt like moments later Nairda's door opens and his
     partner walks inside with a goodie bag of ailments."
     "Along with some beloved milk and cereal for Nairda"
-    np "Here you go... oh wow you look awful! You really are sick!"
+    np "Here you go... oh WOW! You look awful! You really are sick!"
     "Nairda is not sure whether to classify that reaction as a concern or an insult"
     nun "..."
     np "I'll leave it over here for you, and don't get up. The milk will last a few hours out of the fridge.
     So I might as well leave it next to you with a bowl for when you're ready to try to eat something."
     "They grab a bowl and spoon out of the kitchen and place it by Nairda's sofa where he currently resides."
+    "Nairda weakly responds"
     nun "Thanks, I appreciate this..."
-    "Nairda says weakly"
     np "You're welcome, now where are the car keyssssssss? There!"
     "They pick up the keys and head towards the door, waving the keys behind them as they walk away"
     np "Get well soon, Bestie! I love you!"
@@ -265,27 +269,46 @@ label start:
 #    # is so extreme his OCD goes into overdrive.
 
     scene emptygym
+    show nun sad at right
+    show drk sad at left
     "Nairda stops recalling the story, scratching at his hands to clean them."
     drk "I think that's enough for today"
+    scene emptygym
+    show nun sad at right
+    show drk happy at left
     drk "You've done good! I think we're making some real progress. I know it's hard but
     recalling these things can help you to move on and get over.."
     "Nairda cuts them off"
+    scene emptygym
+    show nun angry at right
+    show drk happy at left
     nun "I can't get over it!"
     "Dr Kreiger regrets her words, knowing it wasn't the best way to put it"
+    scene emptygym
+    show nun sad at right
+    show drk sad at left
     drk "No, I'm sorry... I shouldn't have worded it like that it was insensitive"
     drk "I'm just so used to working on the five stages of grief and it's been a year since the
     accident"
     drk "I'm just concerned that we never discuss it and, you might still be at stage one..."
     "The town hall clock dings in the distance"
+    scene emptygym
+    show nun sad at right
+    show drk n at left
     drk "Ah, that time already? Well, I look forward to seeing you again soon. Try to take it easy
     and we'll pick up where we left off on Wednesday."
     "Nairda leaves the office, and gets into his husband's car"
+    scene stairs
+    show nun sad at left
+    show snun n at right
     hubby "How did therapy go?"
     "Nairda looks down to towards the car mat"
     nun "Can we go home?"
     "His husband can see it was a hard session"
+    scene stairs
+    show nun sad at left
+    show snun sad at right
     hubby "Of course! Let's go home."
-
 
     "Next part being at home and getting ready for bed or what not"
 # Getting home and watching a movie or something before bedtime and the next day
@@ -298,7 +321,9 @@ label start:
 # -- Stolen diamond/crystal opal, mace used to break the glass, opal had significant
 # historical backstory.
 # 3. Win / Fail the investigation
-
+    scene apartmentdoor
+    "The phone rings"
+    po "There's been a murder robbery at the museum of Frogs and Fancies"
 
     scene messhall
 # Start of correct and incorrect answers in investigation

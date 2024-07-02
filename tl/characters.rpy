@@ -75,6 +75,7 @@ image snun shy:
 # Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
     "nunshy"
+    zoom 0.5
 image drk sad:
     "nunsad"
     zoom 0.5
