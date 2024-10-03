@@ -38,6 +38,7 @@
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
     scene screenstart
+    "test"
     "Any similarities to real events are purely coincidental."
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
     # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
