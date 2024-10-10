@@ -38,7 +38,6 @@
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
     scene screenstart
-    "test test"
     "Any similarities to real events are purely coincidental."
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
     # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
@@ -122,7 +121,7 @@ label start:
     d "I mean, he solved the case for us, you shouldn't be so harsh."
     po "I don't know what it is but he just rubs me the wrong way"
 
-    "Case Closed"
+    "(Case Closed)"
 
     scene apartmentdoor
     "Nairda Nun returns to his apartment building and see's his neighbour outside"
@@ -311,11 +310,9 @@ label start:
     show snun sad at right
     hubby "Of course! Let's go home."
 
-    "Next part being at home and getting ready for bed or what not"
 # Getting home and watching a movie or something before bedtime and the next day
 
-    "SCENE END"
-
+    "(The Next Day)"
 # SCENE 02 - Murder Scene
 # 1. Call to go to crime scene
 # 2. Murder crime scene and investigation
@@ -325,43 +322,80 @@ label start:
     scene apartmentdoor
     "The phone rings"
     po "There's been a murder robbery at the museum of Frogs and Fancies"
+    nun "We'll be right there!"
 
     scene messhall
 # Start of correct and incorrect answers in investigation
-    "next scene time"
+    show nun n at left
+    nun "So what was stolen?"
+    po "A giant opal. It's not that an opal was stolen though, this opal has historical significance!"
+    "They look around the room to check nobody is listening"
+    po "It was the opal paid to the Frog King to end Frog War VI"
+    "Nairda remembers the history of Frog War VI, his father fought and died in Frog War VI when he was just a tadpole"
+    nun "How much was it worth?"
+    po "At least 12"
+    "Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!"
     #play sound "audio/bell.mp3"
-# ONE: ALICE
-    "QUESTION"
-    show tony n with dissolve
-    a "ALICE TEXT"
+# ONE: Look around
+    po "The crime scene is just inside"
+    scene library
+    "Once inside, there's several forensic owls and several areas of interest"
+    show nun n at right
+    a "Where do you want to look first?"
     #INTRO
     menu:
-        "ANSWER 1":
-            ##play sound "audio/Narrator17.mp3"
-            t "TONY NOISES"
-        "...":
+        "Broken glass cabinet":
+            jump BrokenGlassCabinet
+        "Go outside the building":
             show tony n with dissolve
-            ##play sound "audio/Narrator18.mp3"
-            t "TONY NOISES 2"
+            po "Why are you going outside? The crime scene is in here!"
+            "Nairda is taken back inside and approaches the broken glass cabinet"
+            jump BrokenGlassCabinet
 
+label BrokenGlassCabinet:
+    # scene lab
+    show nun happy at left with dissolve
+    nun "What was the glass was broken with?"
+    po "Well at first they tried their guns, but it's bullet proof glass so..."
+    "The police officer shrugs"
+    nun "At first? How did you figure out they used guns?"
+    po "They left the guns behind"
+    "The police officer points to two discarded guns next to the cabinet"
+    nun "Interesting..."
+    jump BackToTheCrimeScene
 
-    show tony n with dissolve
-    a "QUESTION TWO?"
+label BackToTheCrimeScene:
+
+    a "Where do you want to look next?"
     #Q1
     menu:
-        "BEEP BOOP LETTUCE ANSWER BAD":
-            $ correct = correct -1  #BAD Answer!
-            show tony n with dissolve
-            a "heh"
-        "BAD ANSWER TWO!":
-            $ correct = correct -1  #BAD Answer!
-            show tony n with dissolve
-            a "hmm...?"
-        "GOOD ANSWER ONE":
-            $ correct = correct +1 #Good Answer!
-            show tony n with dissolve
-            a "Good answer noises!"
+        "Open cabinet across the room":
+            $ correct = correct +1  #GOOD Answer!
+            "Nairda looks at the open cabinet across the room"
+            nun "The cabinet is missing an object..."
+            po "So it is! Good eye!"
+            "Nairda stares at the dust around the clean spot where the item used to be housed"
+            nun "Was it a mace?"
+            po "Well, this is where they kept the ye olde Frog War VI weapons, maces were a popular weapon
+            back in the day."
+            menu:
+                "Check the lock":
+                    nun "It looks like it wasn't forced open, I think the culprit worked here"
+                    jump BackToTheCrimeScene2
+                "Go back to the scene":
+                    jump BackToTheCrimeScene2
 
+        "Boot print on the floor":
+            $ correct = correct +1  #GOOD Answer!
+            "Looks like a boot print"
+            nun "Who wears boots?"
+            nun "Unless they wanted to disgise what kind of feet they have!"
+            po "That's a good point! Only criminals use footwear!"
+        "Wet Floor Sign":
+            $ correct = correct -1 #BAD Answer!
+            "It's just a wet floor sign, with a comical rabbit falling on it's butt"
+
+label BackToTheCrimeScene2:
     show tony n
     #Q2
     a "QYUESTION AGAIN?"
