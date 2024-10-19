@@ -48,12 +48,12 @@ label start:
     ##play sound "audio/ SOUND NAME .mp3"
     show nun n at left with dissolve
 
-    "Looking at the dead body, Nairda whispers to themself"
+    "(Looking at the dead body, Nairda whispers to themself)"
     nun "I think I left my oven on..."
-    "Their partner sighs deeply"
+    "(Their partner sighs deeply)"
     show snun angry at right with dissolve
     hubby "No no... I turned everything off before we left"
-    "Nairda looks around the room, then turns back to their partner"
+    "(Nairda looks around the room, then turns back to their partner)"
     show nun sad at left with dissolve
     nun "Are you sure?"
     show snun happy at right with dissolve
@@ -61,7 +61,7 @@ label start:
     show nun n at left with dissolve
     nun "Well, in that case..."
     scene apartmenthalls
-    "A deep pause entered the apartment, everyone stopped talking to watch Nairda solve the case..."
+    "(A deep pause entered the apartment, everyone stopped talking to watch Nairda solve the case...)"
     show nun n at left with dissolve
     nun "The murderer wore slippers to not leave paw prints...
     They were waiting for her for at least an hour, and smoked! Horribly cheap cigarettes, terrible stuff..."
@@ -74,10 +74,10 @@ label start:
     show drwolfe confused at right with dissolve
     po "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
     nun "Yes, we do."
-    "Nairda passes her passport and several opened letter off to table to the police officer"
+    "(Nairda passes her passport and several opened letter off to table to the police officer)"
     nun "It's Jane Doe"
-    show drwolfe sad at right with dissolve
-    "The officer looks at the victim's passport and opened letters"
+#    show drwolfe sad at right with dissolve
+    "(The officer looks at the victim's passport and opened letters)"
     po "Damn, imagine calling you child the general term used for when we can't ID someone...
     They must have hated her"
     nun "Can I finish? I think I left my oven on, so I want to make this quick"
@@ -85,13 +85,13 @@ label start:
     po "Oh, yeah... sorry... How do you know they used the laptop?"
     show snun angry at right
     hubby "It isn't on! And I turned off the gas, remember?"
-    "Everyone looks at Nairda confused"
+    "(Everyone looks at Nairda confused)"
     scene apartmenthalls
     show nun n at left
-    "Nairda Continues"
+    "(Nairda Continues)"
     nun "The computer is wiped down clean, and the murderer is tall! At least 2 ft 4! Look at the computer chair!"
     nun "Who'd be able to use that? A giant, that's who!"
-    "Nairda smelled the air again"
+    "(Nairda smelled the air again)"
     nun "A dog. The murderer is a dog."
     "Looking at the floor next to the window, Nairda tilts their head"
     nun "Irish Wolfhound."
@@ -101,7 +101,7 @@ label start:
     hubby "Jane Doe the cat was dating a dog? How odd!"
     po "It's more common that you'd think actually..."
     scene apartmenthalls
-    "Pointing to dirt on the floor, and a clump of freshly shed fur, Nairda knew they found the murderer"
+    "(Pointing to dirt on the floor, and a clump of freshly shed fur, Nairda knew they found the murderer)"
     show nun n at left with dissolve
     nun "That fur belongs to an Irish Wolfhound, and it was raining earlier. There's a faint smell of wet
     dog on the computer chair. He must have needed something from the computer but..."
@@ -109,14 +109,16 @@ label start:
     po "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
     "Nairda interrupted the police officer"
     nun "No, no no no I can't! I left the oven on! I can smell the gas from here!"
-    "Nairda quickly leaves the apartment whiles their partner follows behind"
+    "(Nairda quickly leaves the apartment whiles their partner follows behind)"
     scene apartmenthalls
     show snun angry
     hubby "You can NOT smell gas! We live across town! And I TURNED OFF YOUR GAS SUPPLY BEFORE WE
     LEFT! YOU'RE INSUFFERABLE!"
     scene apartmenthalls
-    "The police officers and detectives in the apartment look in shock and awe"
+    "(The police officers and detectives in the apartment look in shock and awe)"
+    show drwolfe n at right
     d "So that's Nairda huh?"
+    show chief happy at left
     po "Yeah, both impressive and kind of pathetic when you think about it"
     d "I mean, he solved the case for us, you shouldn't be so harsh."
     po "I don't know what it is but he just rubs me the wrong way"
@@ -124,26 +126,26 @@ label start:
     "(Case Closed)"
 
     scene apartmentdoor
-    "Nairda Nun returns to his apartment building and see's his neighbour outside"
+    "(Nairda Nun returns to his apartment building and see's his neighbour outside)"
     show nun happy
     nun "Hello, Tony!"
     show tony shy at left
     t "Hello, Mr Nairda!"
-    "Tony always loves seeing Nairda return home, probably one of the most exciting parts of his day"
+    "(Tony always loves seeing Nairda return home, probably one of the most exciting parts of his day)"
     show tony n at left
     "How was work, Mr Nairda? Did you solve any cases?"
     show nun happy at right
     nun "I did actually! But I needed to return home, I think I left the oven on..."
-    "Tony's head suddenly snaps upwards, the noise from the pipes after someone flushing their toilet caused them to make the sound of running water"
+    "(Tony's head suddenly snaps upwards, the noise from the pipes after someone flushing their toilet caused them to make the sound of running water)"
     show tony angry
     t "ARGH! WATER! That DAMN EZEKIEL! I've got to go Nairda! I have to stop the water!"
     scene apartmentdoor
     show nun n
-    "Looking into Tony's apartment, you see a makeshift dam covering the walls and ceiling"
-    "As the door slams shut you hear a banging on the cieling and murmuring, along with a faint 'fuck you, Tony!' coming from above"
+    "(Looking into Tony's apartment, you see a makeshift dam covering the walls and ceiling)"
+    "(As the door slams shut you hear a banging on the cieling and murmuring, along with a faint 'fuck you, Tony!' coming from above)"
     show nun sad
     nun "And I thought I had issues..."
-    "Naida's partner comes running up behind them"
+    "(Naida's partner comes running up behind them)"
     scene apartmentdoor
     show nun happy at right
     show snun n at left
@@ -159,46 +161,53 @@ label start:
 
     # NEED THERAPIST OFFICE SCENE IMAGE RECEPTION && OFFICE ITSELF
     scene emptygym
-    "The next morning, at 9am on the dot, Nairda gets anxious"
+    "(The next morning, at 9am on the dot, Nairda gets anxious)"
     show nun angry at left
     nun "Excuse me?"
-    "The receptionist looks up"
+    "(The receptionist looks up)"
     nun "It's 9 o'clock."
-    "The receptionist gives a known look and sighs quietly"
+    "(The receptionist gives a known look and sighs quietly)"
+    show rec happy at right
+
     r "Yes, Mr Nun. I'm sure they'll be ready for you in a minute"
     nun "But my appointment starts at 9am, and it's 9 o'clock."
-    "She puts one of her hands over her face"
+    "(She puts one of her paws over her face)"
     r "Shall we call your husband? He'll know what to do, whiles we wait for Dr Krieger"
-    "Nairda looks perplexed"
+    "(Nairda looks perplexed)"
     show nun sad at left
     nun "You're right, they will know what to do. Can you call them?"
     r "Of course, let's call your husband"
-    "She dials Nairda's husband on the landline, she doesn't need to look it up anymore, this
-    happens so often that it's commited to her memory"
-    "The phone rings"
+    "(She dials Nairda's husband on the landline, she doesn't need to look it up anymore, this
+    happens so often that it's commited to her memory)"
+    "(The phone rings)"
     hubby "Hello? Is everything alright?"
     r "Mr Nun's therapist is running a little late..."
     nun "THREE MINUTES AND COUNTING!"
     r "Yes, 3 minutes late, so we thought we'd call you!"
-    "She hands the phone over to Nairda"
+    "(She hands the phone over to Nairda)"
     nun "Hello hubby, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
     I'm not sure what they could be doing but she knows it's 9am..."
     nun "I bet it's Bruce!"
-    "Nairda looks at the receptionist"
+    "(Nairda looks at the receptionist)"
     nun "Is it? Is it Bruce?"
-    "She looks away"
+    "(She looks away)"
     r "You know I'm not allowed to discuss other patients with you, Mr Nun."
-    "Nairda looks at the receptionist, and then towards the therapist door, then
-    talks down the phone in a hushed wisper"
+    "(Nairda looks at the receptionist, and then towards the therapist door, then
+    talks down the phone in a hushed wisper)"
+    scene emptygym
+    show nun angry at left
     nun "It's definately Bruce!!!"
-    "As nun continues his conversation, being reassured by hubby, the door opens and the therapist
-    peaks around the corner locking eyes with Nairda"
+    scene emptygym
+    show nun n at left
+    "(As nun continues his conversation, being reassured by hubby, the door opens and the therapist
+    peaks around the corner locking eyes with Nairda)"
+    show drk n at right
     drk "I'm terribly sorry, Nairda. I had an emergency appointment over the phone."
     "Nairda looks disgruntled as he hangs up the call"
     nun "Bruce?"
     drk "You know I can't discuss other patients with you Nairda... Now come on in and let's get
     started!"
-    "They both enter the therapy office and take a seat"
+    "(They both enter the therapy office and take a seat)"
 
     # THERAPY START
     scene messhall
@@ -322,12 +331,15 @@ label start:
     scene apartmentdoor
     "The phone rings"
     po "There's been a murder robbery at the museum of Frogs and Fancies"
+    show nun happy at left
     nun "We'll be right there!"
 
-    scene messhall
 # Start of correct and incorrect answers in investigation
+
+    scene messhall
     show nun n at left
     nun "So what was stolen?"
+    show drwolfe  n at right
     po "A giant opal. It's not that an opal was stolen though, this opal has historical significance!"
     "They look around the room to check nobody is listening"
     po "It was the opal paid to the Frog King to end Frog War VI"
@@ -335,26 +347,30 @@ label start:
     nun "How much was it worth?"
     po "At least 12"
     "Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!"
-    #play sound "audio/bell.mp3"
+
 # ONE: Look around
     po "The crime scene is just inside"
     scene library
     "Once inside, there's several forensic owls and several areas of interest"
     show nun n at right
-    a "Where do you want to look first?"
-    #INTRO
+# TWO: First choice of investigation
+    "Where do you want to look first?"
     menu:
         "Broken glass cabinet":
+            $ correct = correct +1  #GOOD choice!
             jump BrokenGlassCabinet
         "Go outside the building":
-            show tony n with dissolve
+            $ correct = correct -1  #BAD choice!
+            show drwolfe  n at right
             po "Why are you going outside? The crime scene is in here!"
             "Nairda is taken back inside and approaches the broken glass cabinet"
             jump BrokenGlassCabinet
 
+# Broken cabinet
 label BrokenGlassCabinet:
     # scene lab
     show nun happy at left with dissolve
+    show drwolfe  n at right
     nun "What was the glass was broken with?"
     po "Well at first they tried their guns, but it's bullet proof glass so..."
     "The police officer shrugs"
@@ -364,68 +380,88 @@ label BrokenGlassCabinet:
     nun "Interesting..."
     jump BackToTheCrimeScene
 
+# NEXT CRIME SCENE QUESTIONS
 label BackToTheCrimeScene:
-
-    a "Where do you want to look next?"
+    scene library
+    "Where do you want to look next?"
     #Q1
     menu:
         "Open cabinet across the room":
-            $ correct = correct +1  #GOOD Answer!
+            $ correct = correct +1  #GOOD choice!
             "Nairda looks at the open cabinet across the room"
+            show nun confused at left
             nun "The cabinet is missing an object..."
+            show drwolfe  n at right
             po "So it is! Good eye!"
             "Nairda stares at the dust around the clean spot where the item used to be housed"
+            show nun n at left
             nun "Was it a mace?"
             po "Well, this is where they kept the ye olde Frog War VI weapons, maces were a popular weapon
             back in the day."
             menu:
                 "Check the lock":
+                    $ correct = correct +1  #GOOD choice!
                     nun "It looks like it wasn't forced open, I think the culprit worked here"
                     jump BackToTheCrimeScene2
                 "Go back to the scene":
+                    $ correct = correct -1 #BAD choice!
+                    "Nairda feel like you might have missed out on some evidence"
+                    "It was probably nothing..."
                     jump BackToTheCrimeScene2
 
         "Boot print on the floor":
-            $ correct = correct +1  #GOOD Answer!
+            $ correct = correct +1  #GOOD choice!
             "Looks like a boot print"
+            show nun confused at left
             nun "Who wears boots?"
             nun "Unless they wanted to disgise what kind of feet they have!"
+            show drwolfe angry at right
             po "That's a good point! Only criminals use footwear!"
         "Wet Floor Sign":
-            $ correct = correct -1 #BAD Answer!
-            "It's just a wet floor sign, with a comical rabbit falling on it's butt"
+            $ correct = correct -1 #BAD choice!
+            "It's just a wet floor sign, with a comical rabbit falling on their butt"
+            "Nairda feel like you might have missed out on some evidence"
+            "It was probably nothing..."
 
+# NEXT CRIME SCENE QUESTIONS
 label BackToTheCrimeScene2:
-    show tony n
-    #Q2
-    a "QYUESTION AGAIN?"
+    scene library
+    "Where do you want to look next?"
     menu:
-        "GOOD ANSWER!":
+        "CCTV Cameras":
             $ correct = correct +1 #Good Answer!
-            jump answer1
-            label answer1:
-                a "EXTRA Q?"
+            nun "Wait, there's CCTV?"
+            po "The tapes have been deleted, we can't look at them"
+            nun "Hmmmm...... How do you get into the CCTV room?"
+            po "We had to call a security guard in, they're one of the only people with keys and access"
+            nun "Who else has access?"
+            po "Security and the two caretakers"
+            jump caretakers
+            label caretakers:
                 menu:
-                    "Bad answer":
+                    "Hmm... probably wasn't the caretakers?":
                         $ correct = correct -1 #BAD Answer!
                         show tony n with dissolve
-                        a "Hm.."
-                    "GOOD ANSWER":
+                        "Why not?"
+                    "Where are the caretakers?":
                         $ correct = correct +1 #Good Answer!
                         show tony n with dissolve
-                        a "Of course!"
-        "HALF GOOD ANSWER":
-            a "Half good answer reply"
+                        "Of course!"
+        "HALF GOOD thing to notice":
+            "Half good answer reply"
 
-    #Q3
-    a "QUESTION QUESTION"
+
+    scene library
+    "Where do you want to look next?"
     menu:
-        "NEUTRAL REPLY.":
-            a "!"
+        "Good notice":
+            $ correct = correct +1 # GOOD ans
+            "!"
             show tony n with dissolve
             "..."
-        "NEUTRAL ANS":
-            a "!"
+        "Bad notice":
+            $ correct = correct -1 # BAD ans
+            "!"
             show tony n with dissolve
             "NEUTRAL"
 
