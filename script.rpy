@@ -39,7 +39,10 @@
 label start:
     scene revivaljam
     "Hello Revival Jam! Due to time constraints, I was unable to draw every character, so I've taken photos of Sylvania Family toys as stand ins"
-    "They were also used during the game design process"
+    "They were, however, purchased to be used during the game design process months ago"
+    "This project was abandonned several months ago, I just didn't have the free time to continue, so the aim for this game jam was to finish up a general demo with placeholders"
+    "Enjoy!... or don't??? I can't make you, I'm not a cop!"
+
     scene screenstart
     "Any similarities to real events are purely coincidental."
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
