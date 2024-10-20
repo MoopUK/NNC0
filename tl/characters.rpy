@@ -5,6 +5,8 @@ default correct = 0
 
 # Give the info and colour for each character
 
+define narrator = Character("Narrator") # Narrator for breaking the fourth wall
+
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
@@ -23,6 +25,7 @@ define d = Character("Detective", color="#FFCC33")#yellow
 define po = Character("Police Officer", color="#800000")#maroon
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
+define ch = Character("Chief", color="FFFFFF")
 
 # images for characters and facial expressions
 # General expressions:

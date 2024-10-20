@@ -93,7 +93,7 @@ label start:
     nun "Who'd be able to use that? A giant, that's who!"
     "(Nairda smelled the air again)"
     nun "A dog. The murderer is a dog."
-    "Looking at the floor next to the window, Nairda tilts their head"
+    "(Looking at the floor next to the window, Nairda tilts their head)"
     nun "Irish Wolfhound."
     show drwolfe n at right with dissolve
     po "Her ex was an Irish Wolfhound!"
@@ -107,7 +107,7 @@ label start:
     dog on the computer chair. He must have needed something from the computer but..."
     show drwolfe n at right with dissolve
     po "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
-    "Nairda interrupted the police officer"
+    "(Nairda interrupted the police officer)"
     nun "No, no no no I can't! I left the oven on! I can smell the gas from here!"
     "(Nairda quickly leaves the apartment whiles their partner follows behind)"
     scene apartmenthalls
@@ -123,7 +123,7 @@ label start:
     d "I mean, he solved the case for us, you shouldn't be so harsh."
     po "I don't know what it is but he just rubs me the wrong way"
 
-    "(Case Closed)"
+    "(Another Case Closed)"
 
     scene apartmentdoor
     "(Nairda Nun returns to his apartment building and see's his neighbour outside)"
@@ -164,11 +164,10 @@ label start:
     "(The next morning, at 9am on the dot, Nairda gets anxious)"
     show nun angry at left
     nun "Excuse me?"
+    show rec happy at right
     "(The receptionist looks up)"
     nun "It's 9 o'clock."
     "(The receptionist gives a known look and sighs quietly)"
-    show rec happy at right
-
     r "Yes, Mr Nun. I'm sure they'll be ready for you in a minute"
     nun "But my appointment starts at 9am, and it's 9 o'clock."
     "(She puts one of her paws over her face)"
@@ -182,9 +181,13 @@ label start:
     "(The phone rings)"
     hubby "Hello? Is everything alright?"
     r "Mr Nun's therapist is running a little late..."
+    scene emptygym
+    show nun angry at left
     nun "THREE MINUTES AND COUNTING!"
     r "Yes, 3 minutes late, so we thought we'd call you!"
     "(She hands the phone over to Nairda)"
+    scene emptygym
+    show nun sad at left
     nun "Hello hubby, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
     I'm not sure what they could be doing but she knows it's 9am..."
     nun "I bet it's Bruce!"
@@ -218,6 +221,9 @@ label start:
     "Nairda notices a cushion tilted to the side, whiles the other cushions on the sofa across
     the room are straight and evenly spaced apart"
     nun "Is that on purpose?"
+    scene messhall
+    show nun angry at right
+    show drk n at left
     "Dr Krieger doesn't clock the sofa cushion until she turns to see it"
     drk "It wasn't on purpose, no. Would you like me to fix it?"
     nun "No no, it's fine. It doesn't bother me, it's fine..."
@@ -226,12 +232,17 @@ label start:
     "Nairda goes over to the sofa and straightens the cushions"
     nun "It doesn't bother me, it just looks untidy, you don't want people to think your
     therapy office is untidy... It'll look unprofessional..."
+    scene messhall
+    show nun n at right
+    show drk n at left
     "Now that Nairda has justified his compulsion the therapy continues"
+
     # BACK STORY START
     drk "Let's talk about your partner"
     nun "My partner's fine, he'll be picking me up after this appointment"
     drk "No, I meant your partner when you were a detective on the force"
     "Nairda looks perplexed, and remembers the case he never was never able to solve..."
+
     # BACK STORY PARTNER DEATH
     scene apartmentlongshot
     "One year ago"
@@ -271,11 +282,7 @@ label start:
     nun "I lo... love you too.. aha..."
     "..."
     "That was the last time they ever saw each other"
-#    # Next part of this story for later:
-#    # Nairda is to wake up several hours later with banging on the door and dozens of missed calls from everyone
-#    # their partner didn't die immediately, but in hospital, whiles Nun was still sleeping off their illness
-#    # They were surrounded by everyone except Nairda. So heavy guilt encompasses him and the phobia of being ill
-#    # is so extreme his OCD goes into overdrive.
+    # Flashback end
 
     scene emptygym
     show nun sad at right
@@ -318,10 +325,9 @@ label start:
     show nun sad at left
     show snun sad at right
     hubby "Of course! Let's go home."
-
-# Getting home and watching a movie or something before bedtime and the next day
-
     "(The Next Day)"
+
+
 # SCENE 02 - Murder Scene
 # 1. Call to go to crime scene
 # 2. Murder crime scene and investigation
@@ -482,18 +488,32 @@ label BackToTheCrimeScene2:
 label good_end:
     scene lab
     show nun happy at left with dissolve
-    nun "Good End"
+    nun "The criminals were the caretakers at the Museum of Frogs and Fancies!"
+    nun "Here's what happ..."
+    narrator "Shhh! Do you want to get sued? Say something else!"
+    "()"
+    nun "What the?"
     return
 
 # BAD ENDING
 label bad_end:
     scene apartmenthalls
-    show nun happy at right with dissolve
-    show nun happy at left with dissolve
-    nun "Bad end"
+    show nun sad at right with dissolve
+    show chief angry at left
+    ch "You failed to catch the criminals"
+    ch "I always knew you were an idiot"
+    "(Bad End)"
     ##play sound "audio/badEnd2.mp3"
     return
 
 # DEMO END
     # This is the end of the game.
     return
+
+### NOTES FOR EXPANSION ON GAME:
+
+## FUTURE THERAPY SESSION:
+#    # Nairda is to wake up several hours later with banging on the door and dozens of missed calls from everyone
+#    # their partner didn't die immediately, but in hospital, whiles Nun was still sleeping off their illness
+#    # They were surrounded by everyone except Nairda. So heavy guilt encompasses him and the phobia of being ill
+#    # is so extreme his OCD goes into overdrive.
