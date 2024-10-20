@@ -444,7 +444,12 @@ label KeysUsed:
             show drwolfe happy at right
             po "You're right! I'll go check who has a copy of the keys"
             jump BackToTheCrimeScene2
-
+        "Was it left unlocked?":
+            show nun confused at left
+            nun "Do you think this would be left unlocked?"
+            show drwolfe n at right
+            po "It'd never be left unlocked! Everything here is a historical artifact, someone must have used a key!"
+            jump BackToTheCrimeScene2
 
 # CRIME SCENE: NEXT PART
 label BackToTheCrimeScene2:
