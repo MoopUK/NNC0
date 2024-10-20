@@ -411,7 +411,7 @@ label BackToTheCrimeScene:
                 "Check the lock":
                     $ correct = correct +1  #GOOD choice!
                     nun "It looks like it wasn't forced open..."
-                    jump KeyUsed
+                    jump KeysUsed
                 "Go back to the scene":
                     $ correct = correct -1 #BAD choice!
                     "(Nairda feel like you might have missed out on some evidence)"
