@@ -37,6 +37,9 @@
 # 2. Shows Nairda Nun return home, introduces Tony the Beaver
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
+    scene revivaljam
+    "Hello Revival Jam! Due to time constraints, I was unable to draw every character, so I've taken photos of Sylvania Family toys as stand ins"
+    "They were also used during the game design process"
     scene screenstart
     "Any similarities to real events are purely coincidental."
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
@@ -117,11 +120,11 @@ label start:
     scene apartmenthalls
     "(The police officers and detectives in the apartment look in shock and awe)"
     show drwolfe n at right
-    d "So that's Nairda huh?"
+    po "So that's Nairda huh?"
     show chief happy at left
-    po "Yeah, both impressive and kind of pathetic when you think about it"
-    d "I mean, he solved the case for us, you shouldn't be so harsh."
-    po "I don't know what it is but he just rubs me the wrong way"
+    d "Yeah, both impressive and kind of pathetic when you think about it"
+    po "I mean, he solved the case for us, you shouldn't be so harsh."
+    d "I don't know what it is but he just rubs me the wrong way"
 
     "(Another Case Closed)"
 
@@ -208,7 +211,7 @@ label start:
     peaks around the corner locking eyes with Nairda)"
     show drk n at right
     drk "I'm terribly sorry, Nairda. I had an emergency appointment over the phone."
-    "Nairda looks disgruntled as he hangs up the call"
+    "(Nairda looks disgruntled as he hangs up the call)"
     nun "Bruce?"
     drk "You know I can't discuss other patients with you Nairda... Now come on in and let's get
     started!"
@@ -220,30 +223,30 @@ label start:
     show drk n at left
     drk "So, how's things?"
     nun "Things have been good! Very goo..."
-    "Nairda notices a cushion tilted to the side, whiles the other cushions on the sofa across
-    the room are straight and evenly spaced apart"
-    nun "Is that on purpose?"
     scene messhall
     show nun angry at right
     show drk n at left
-    "Dr Krieger doesn't clock the sofa cushion until she turns to see it"
+    "(Nairda notices a cushion tilted to the side, whiles the other cushions on the sofa across
+    the room are straight and evenly spaced apart)"
+    nun "Is that on purpose?"
+    "(Dr Krieger doesn't clock the sofa cushion until she turns to see it)"
     drk "It wasn't on purpose, no. Would you like me to fix it?"
     nun "No no, it's fine. It doesn't bother me, it's fine..."
-    "Nairda tries to look away but the compusion to correct the sofa is killing him"
+    "(Nairda tries to look away but the compusion to correct the sofa is killing him)"
     nun "It's just... it doesn't bother me but it looks untidy..."
-    "Nairda goes over to the sofa and straightens the cushions"
+    "(Nairda goes over to the sofa and straightens the cushions)"
     nun "It doesn't bother me, it just looks untidy, you don't want people to think your
     therapy office is untidy... It'll look unprofessional..."
     scene messhall
     show nun n at right
     show drk n at left
-    "Now that Nairda has justified his compulsion the therapy continues"
+    "(Now that Nairda has justified his compulsion the therapy continues)"
 
     # BACK STORY START
     drk "Let's talk about your partner"
     nun "My partner's fine, he'll be picking me up after this appointment"
     drk "No, I meant your partner when you were a detective on the force"
-    "Nairda looks perplexed, and remembers the case he never was never able to solve..."
+    "(Nairda looks perplexed, and remembers the case he never was never able to solve...)"
 
     # BACK STORY PARTNER DEATH
     scene apartmentlongshot
@@ -274,8 +277,8 @@ label start:
     nun "..."
     np "I'll leave it over here for you, and don't get up. The milk will last a few hours out of the fridge.
     So I might as well leave it next to you with a bowl for when you're ready to try to eat something."
-    "(They grab a bowl and spoon out of the kitchen and place it by Nairda's sofa where he currently resides."
-    "Nairda weakly responds)"
+    "(They grab a bowl and spoon out of the kitchen and place it by Nairda's sofa where he currently resides)"
+    "(Nairda weakly responds)"
     nun "Thanks, I appreciate this..."
     np "You're welcome, now where are the car keyssssssss? There!"
     "(They pick up the keys and head towards the door, waving the keys behind them as they walk away)"
@@ -350,12 +353,12 @@ label start:
     nun "So what was stolen?"
     show drwolfe  n at right
     po "A giant opal. It's not that an opal was stolen though, this opal has historical significance!"
-    "They look around the room to check nobody is listening"
+    "(They look around the room to check nobody is listening)"
     po "It was the opal paid to the Frog King to end Frog War VI"
-    "Nairda remembers the history of Frog War VI, his father fought and died in Frog War VI when he was just a tadpole"
+    "(Nairda remembers the history of Frog War VI, his father fought and died in Frog War VI when he was just a tadpole)"
     nun "How much was it worth?"
     po "At least 12"
-    "Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!"
+    "(Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!)"
 
 # CRIME SCENE: Look around
     po "The crime scene is just inside"
@@ -469,26 +472,29 @@ label BackToTheCrimeScene2:
                         show drwolfe shy with dissolve
                         po "Of course!"
                         po "They didn't even show up to work today!"
-        "HALF GOOD thing to notice":
-            "Half good answer reply"
-
+        "Shelf of dusty books":
+            "(The dusty books have nothing to do with the investigation.)"
+            "(Nairda feel like you might have missed out on some evidence)"
+            "(It was probably nothing...)"
 
     scene library
     "Where do you want to look next?"
     menu:
         "Ask about the Front Door lock":
-            $ correct = correct +1 # GOOD ans
+            $ correct = correct +1 # GOOD Choice
 
             nun "Do you know if the front door lock was messed with?"
             show drwolfe happy with dissolve
             po "It was open when we got here, but it doesn't look like anybody messed with it..."
 
         "Ask about the light switches":
-            $ correct = correct -1 # BAD ans
+            $ correct = correct -1 # BAD Choice
             nun "Does this place have a light switch?"
             show drwolfe n with dissolve
             po "They're automatic lights, why?"
             nun "hmm... I dunno... fingerprints maybe..."
+            "(Nairda feel like you might have missed out on some evidence)"
+            "(It was probably nothing...)"
 
     "(Everyone gathers to share what they've learned during the investigation...)"
 
@@ -525,7 +531,7 @@ label good_end:
     nun "they needed to use something sturdier, like the maces kept in the weapons display!"
     nun "With no forced entry, no CCTV footage, no locks broken on the cabinets... it was obvious they must work here!"
     nun "If they'd shot the weapon display open, or any of the locks! We probably wouldn't have clicked that the people worked here"
-
+    "(The case was solved, well done, Nairda.)"
     return
 
 # BAD ENDING
@@ -537,7 +543,6 @@ label bad_end:
     ch "You failed to catch the criminals"
     ch "I always knew you were an idiot"
     "(Bad End)"
-    ##play sound "audio/badEnd2.mp3"
     return
 
 # DEMO END
