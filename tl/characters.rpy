@@ -5,6 +5,8 @@ default correct = 0
 
 # Give the info and colour for each character
 
+define GameDev = Character("Narrator") # Narrator for breaking the fourth wall
+
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
@@ -23,6 +25,7 @@ define d = Character("Detective", color="#FFCC33")#yellow
 define po = Character("Police Officer", color="#800000")#maroon
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
+define ch = Character("Chief", color="FFFFFF")
 
 # images for characters and facial expressions
 # General expressions:
@@ -74,41 +77,41 @@ image snun shy:
 
 # Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
-    "nunshy"
+    "drk"
     zoom 0.5
 image drk sad:
-    "nunsad"
+    "drk"
     zoom 0.5
 image drk happy:
-    "nunhappy"
+    "drk"
     zoom 0.5
 image drk angry:
-    "nunangry"
+    "drk"
     zoom 0.5
 image drk confused:
-    "nunneutral"
+    "drk"
     zoom 0.5
 image drk shy:
-    "nunshy"
+    "drk"
     zoom 0.5
 
 # Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
 image rec n:
-    "nunshy"
+    "receptionist"
 image rec sad:
-    "nunsad"
+    "receptionist"
     zoom 0.5
 image rec happy:
-    "nunhappy"
+    "receptionist"
     zoom 0.5
 image rec angry:
-    "nunangry"
+    "receptionist"
     zoom 0.5
 image rec confused: #NEEDED
-    "nunneutral"
+    "receptionist"
     zoom 0.5
 image rec shy:
-    "nunshy"
+    "receptionist"
     zoom 0.5
 
 # Tony (apartment neighbour)
@@ -148,40 +151,40 @@ image ez shy:
 # Dr Wolfe (Mortician)
 image drwolfe n:
     "drwolfeneutral"
-    zoom 0.7
+    zoom 0.5
 image drwolfe sad:
     "drwolfesad"
-    zoom 0.8
+    zoom 0.5
 image drwolfe happy:
     "doctorwolfehappy"
-    zoom 0.8
+    zoom 0.5
 image drwolfe angry:
     "drwolfeangry"
-    zoom 0.8
+    zoom 0.5
 image drwolfe confused: #NEEDED
     "drwolfeconfused"
     zoom 0.5
 image drwolfe shy:
     "drwolfeshy"
-    zoom 0.8
+    zoom 0.5
 
 # Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
 image chief n:
-    "doctorwolfhappy"
+    "policeman"
 image chief sad:
-    "nunsad"
+    "policeman"
     zoom 0.5
 image chief happy:
-    "nunhappy"
+    "policeman"
     zoom 0.5
 image chief angry:
-    "nunangry"
+    "policeman"
     zoom 0.5
 image chief confused:
-    "nunneutral"
+    "policeman"
     zoom 0.5
 image chief shy:
-    "nunshy"
+    "policeman"
     zoom 0.5
 
 # Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
