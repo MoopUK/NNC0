@@ -37,11 +37,6 @@
 # 2. Shows Nairda Nun return home, introduces Tony the Beaver
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
-    scene revivaljam
-    "Hello Revival Jam! Due to time constraints, I was unable to draw every character, so I've taken photos of some Sylvania Family toys as stand ins for sprites"
-    "This project was abandonned several months ago, I just didn't have the free time to continue, so the aim for this game jam was to finish up a general demo with placeholders"
-    "Enjoy!... or don't??? I can't make you, I'm not a cop!"
-
     scene screenstart
     "Any similarities to real events are purely coincidental."
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
