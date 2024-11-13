@@ -30,6 +30,15 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Game development: Kouda_Ha
+
+Character Drawings: Kouda_Ha
+
+Photos of Sylvanian Families to use as placeholder character images: Kouda_Ha
+
+Sound and BGM: Freesound.org && pixabay.com
+
+Background Images used: https://neeka.itch.io/academia-background-pack-lite
 """)
 
 

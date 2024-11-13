@@ -38,8 +38,7 @@
 # 3. Very mild introduction of Ezekiel and a feud between them and Tony
 label start:
     scene revivaljam
-    "Hello Revival Jam! Due to time constraints, I was unable to draw every character, so I've taken photos of Sylvania Family toys as stand ins"
-    "They were, however, purchased to be used during the game design process months ago"
+    "Hello Revival Jam! Due to time constraints, I was unable to draw every character, so I've taken photos of some Sylvania Family toys as stand ins for sprites"
     "This project was abandonned several months ago, I just didn't have the free time to continue, so the aim for this game jam was to finish up a general demo with placeholders"
     "Enjoy!... or don't??? I can't make you, I'm not a cop!"
 
@@ -51,7 +50,6 @@ label start:
     "Only fake ones."
     scene apartmenthalls
     play music "audio/cafe.mp3"
-    ##play sound "audio/ SOUND NAME .mp3"
     show nun n at left with dissolve
 
     "(Looking at the dead body, Nairda whispers to themself)"
@@ -71,7 +69,7 @@ label start:
     show nun n at left with dissolve
     nun "The murderer wore slippers to not leave paw prints...
     They were waiting for her for at least an hour, and smoked! Horribly cheap cigarettes, terrible stuff..."
-    "They continue"
+    "(They continue)"
     scene computerroom
     nun "After they killed Jane Doe, they checked her computer. Look at the chair,
     it's way too tall for a cat! The killer has to be at least 2ft 4... very tall, not a frog..."
@@ -80,6 +78,7 @@ label start:
     show drwolfe confused at right with dissolve
     po "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
     nun "Yes, we do."
+    play sound "audio/paper.mp3"
     "(Nairda passes her passport and several opened letter off to table to the police officer)"
     nun "It's Jane Doe"
     show drwolfe sad at right with dissolve
@@ -142,13 +141,15 @@ label start:
     "How was work, Mr Nairda? Did you solve any cases?"
     show nun happy at right
     nun "I did actually! But I needed to return home, I think I left the oven on..."
-    "(Tony's head suddenly snaps upwards, the noise from the pipes after someone flushing their toilet caused them to make the sound of running water)"
+    play sound "audio/toiletnoise.mp3"
+    "(Tony's head suddenly snaps upwards)"
+    "(the noise from the pipes after someone flushing their toilet caused them to make the sound of running water)"
     show tony angry
     t "ARGH! WATER! That DAMN EZEKIEL! I've got to go Nairda! I have to stop the water!"
     scene apartmentdoor
     show nun n
     "(Looking into Tony's apartment, you see a makeshift dam covering the walls and ceiling)"
-    "(As the door slams shut you hear a banging on the cieling and murmuring, along with a faint 'fuck you, Tony!' coming from above)"
+    "(As the door slams shut you hear a banging on the ceiling and murmuring, along with a faint 'fuck you, Tony!' coming from above)"
     show nun sad
     nun "And I thought I had issues..."
     "(Naida's partner comes running up behind them)"
@@ -184,6 +185,7 @@ label start:
     r "Of course, let's call your husband"
     "(She dials Nairda's husband on the landline, she doesn't need to look it up anymore, this
     happens so often that it's commited to her memory)"
+    play sound "audio/ring.mp3"
     "(The phone rings)"
     hubby "Hello? Is everything alright?"
     r "Mr Nun's therapist is running a little late..."
@@ -195,7 +197,7 @@ label start:
     "(She hands the phone over to Nairda)"
     scene emptygym
     show nun sad at left
-    nun "Hello hubby, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
+    nun "Hello Strudel, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
     I'm not sure what they could be doing but she knows it's 9am..."
     nun "I bet it's Bruce!"
     "(Nairda looks at the receptionist)"
@@ -373,9 +375,11 @@ label start:
     menu:
         "Broken glass cabinet":
             $ correct = correct +1  #GOOD choice!
+            play sound "audio/yes.mp3"
             jump BrokenGlassCabinet
         "Go outside the building":
             $ correct = correct -1  #BAD choice!
+            play sound "audio/no.mp3"
             show drwolfe  n at right
             po "Why are you going outside? The crime scene is in here!"
             "(Nairda is taken back inside and approaches the broken glass cabinet)"
@@ -403,6 +407,7 @@ label BackToTheCrimeScene:
     menu:
         "Open cabinet across the room":
             $ correct = correct +1  #GOOD choice!
+            play sound "audio/yes.mp3"
             "Nairda looks at the open cabinet across the room"
             show nun confused at left
             nun "The cabinet is missing an object..."
@@ -416,16 +421,19 @@ label BackToTheCrimeScene:
             menu:
                 "Check the lock":
                     $ correct = correct +1  #GOOD choice!
+                    play sound "audio/yes.mp3"
                     nun "It looks like it wasn't forced open..."
                     jump KeysUsed
                 "Go back to the scene":
                     $ correct = correct -1 #BAD choice!
+                    play sound "audio/no.mp3"
                     "(Nairda feel like you might have missed out on some evidence)"
                     "(It was probably nothing...)"
                     jump BackToTheCrimeScene2
 
         "Boot print on the floor":
             $ correct = correct +1  #GOOD choice!
+            play sound "audio/yes.mp3"
             "Looks like a boot print"
             show nun confused at left
             nun "Who wears boots?"
@@ -434,6 +442,7 @@ label BackToTheCrimeScene:
             po "That's a good point! Only criminals use footwear!"
         "Wet Floor Sign":
             $ correct = correct -1 #BAD choice!
+            play sound "audio/no.mp3"
             "(It's just a wet floor sign, with a comical rabbit falling on their butt)"
             "(Nairda feel like you might have missed out on some evidence)"
             "(It was probably nothing...)"
@@ -442,6 +451,7 @@ label KeysUsed:
     menu:
         "They used a key to get inside?":
             $ correct = correct +1 #GOOD Choice!
+            play sound "audio/yes.mp3"
             show nun happy at left
             nun "They had the key to the weapon display? The culprit works here!"
             show drwolfe happy at right
@@ -461,6 +471,7 @@ label BackToTheCrimeScene2:
     menu:
         "CCTV Cameras":
             $ correct = correct +1 #Good Answer!
+            play sound "audio/yes.mp3"
             nun "Wait, there's CCTV?"
             po "The tapes have been deleted, we can't look at them"
             nun "Hmmmm...... How do you get into the CCTV room?"
@@ -473,14 +484,18 @@ label BackToTheCrimeScene2:
                     "Hmm... probably wasn't the caretakers?":
                         scene library
                         $ correct = correct -1 #BAD Answer!
+                        play sound "audio/no.mp3"
                         show drwolfe angry with dissolve
                         po "Why not? They didn't show up to work today"
                     "Where are the caretakers?":
                         $ correct = correct +1 #Good Answer!
+                        play sound "audio/yes.mp3"
                         show drwolfe shy with dissolve
                         po "Of course!"
                         po "They didn't even show up to work today!"
         "Shelf of dusty books":
+            $ correct = correct -1 #BAD Answer!
+            play sound "audio/no.mp3"
             "(The dusty books have nothing to do with the investigation.)"
             "(Nairda feel like you might have missed out on some evidence)"
             "(It was probably nothing...)"
@@ -490,13 +505,14 @@ label BackToTheCrimeScene2:
     menu:
         "Ask about the Front Door lock":
             $ correct = correct +1 # GOOD Choice
-
+            play sound "audio/yes.mp3"
             nun "Do you know if the front door lock was messed with?"
             show drwolfe happy with dissolve
             po "It was open when we got here, but it doesn't look like anybody messed with it..."
 
         "Ask about the light switches":
             $ correct = correct -1 # BAD Choice
+            play sound "audio/no.mp3"
             nun "Does this place have a light switch?"
             show drwolfe n with dissolve
             po "They're automatic lights, why?"
@@ -504,7 +520,7 @@ label BackToTheCrimeScene2:
             "(Nairda feel like you might have missed out on some evidence)"
             "(It was probably nothing...)"
 
-    "(Everyone gathers to share what they've learned during the investigation...)"
+    "(Everyone gathers back at the lab to share what they've learned during the investigation...)"
 
 
 #ENDINGS: This checks if Nairda gets the good ending solving the crime or the bad ending
@@ -528,7 +544,7 @@ label good_end:
     GameDev "Shhh! Do you want me to get sued? Say something else!"
     scene lab
     show nun confused at left
-    "(Nairda feels like they just heard the wrath of a god... or sleep deprived starving artist)"
+    "(Nairda feels like they just heard the wrath of a... god? Actually, come to think of it, it sounded more like a sleep deprived games developer)"
     nun "(gulp)"
     scene lab
     show nun n at left
@@ -539,7 +555,9 @@ label good_end:
     nun "they needed to use something sturdier, like the maces kept in the weapons display!"
     nun "With no forced entry, no CCTV footage, no locks broken on the cabinets... it was obvious they must work here!"
     nun "If they'd shot the weapon display open, or any of the locks! We probably wouldn't have clicked that the people worked here"
-    "(The case was solved, well done, Nairda.)"
+    "(The case was solved, shortly after giving in your report the two caretakers were found making a run for the hills)"
+    "(Literally! The police have no jurisdiction on hills, nobody is sure why hills are a safe haven for crimes, probably a stupid old law, but thankfully they were caught before they made it to one)"
+    "(Well done, Nairda.)"
     return
 
 # BAD ENDING
@@ -550,7 +568,7 @@ label bad_end:
     show chief angry at left
     ch "You failed to catch the criminals"
     ch "I always knew you were an idiot"
-    "(Bad End)"
+    "(The case was left unsolved, and the giant opal was never found)"
     return
 
 # DEMO END
