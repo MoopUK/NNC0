@@ -77,41 +77,41 @@ image snun shy:
 
 # Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
-    "drk"
+    "drkn"
     zoom 0.5
 image drk sad:
-    "drk"
+    "drksad"
     zoom 0.5
 image drk happy:
-    "drk"
+    "drkhappy"
     zoom 0.5
 image drk angry:
-    "drk"
+    "drkangry"
     zoom 0.5
 image drk confused:
-    "drk"
+    "drkconfused"
     zoom 0.5
 image drk shy:
-    "drk"
+    "drkshy"
     zoom 0.5
 
 # Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
 image rec n:
-    "receptionist"
+    "receptionistn"
 image rec sad:
-    "receptionist"
+    "receptionistsad"
     zoom 0.5
 image rec happy:
-    "receptionist"
+    "receptionisthappy"
     zoom 0.5
 image rec angry:
-    "receptionist"
+    "receptionistangry"
     zoom 0.5
-image rec confused: #NEEDED
-    "receptionist"
+image rec confused:
+    "receptionistconfused"
     zoom 0.5
 image rec shy:
-    "receptionist"
+    "receptionistshy"
     zoom 0.5
 
 # Tony (apartment neighbour)
