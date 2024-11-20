@@ -161,7 +161,7 @@ image drwolfe happy:
 image drwolfe angry:
     "drwolfeangry"
     zoom 0.5
-image drwolfe confused: #NEEDED
+image drwolfe confused:
     "drwolfeconfused"
     zoom 0.5
 image drwolfe shy:
@@ -209,18 +209,18 @@ image hare shy:
 # Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
 image bruce n:
     "nunsad"
-image hare sad:
+image bruce sad:
     "nunsad"
     zoom 0.5
-image hare happy:
+image bruce happy:
     "nunhappy"
     zoom 0.5
-image hare angry:
+image bruce angry:
     "nunangry"
     zoom 0.5
-image hare confused:
+image bruce confused:
     "nunneutral"
     zoom 0.5
-image hare shy:
+image bruce shy:
     "nunshy"
     zoom 0.5
