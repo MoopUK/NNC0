@@ -71,18 +71,18 @@ label start:
     scene apartmenthalls
     show nun n at left with dissolve
     show drwolfe confused at right with dissolve
-    po "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
+    mor "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
     nun "Yes, we do."
     play sound "audio/paper.mp3"
-    "(Nairda passes her passport and several opened letter off to table to the police officer)"
+    "(Nairda passes her passport and several opened letter off to table to the mortician)"
     nun "It's Jane Doe"
     show drwolfe sad at right with dissolve
-    "(The officer looks at the victim's passport and opened letters)"
-    po "Damn, imagine calling you child the general term used for when we can't ID someone...
+    "(The mortician looks at the victim's passport and opened letters)"
+    mor "Damn, imagine calling you child the general term used for when we can't ID someone...
     They must have hated her"
     nun "Can I finish? I think I left my oven on, so I want to make this quick"
     show drwolfe shy at right with dissolve
-    po "Oh, yeah... sorry... How do you know they used the laptop?"
+    mor "Oh, yeah... sorry... How do you know they used the laptop?"
     show snun angry at right
     hubby "It isn't on! And I turned off the gas, remember?"
     "(Everyone looks at Nairda confused)"
@@ -96,18 +96,18 @@ label start:
     "(Looking at the floor next to the window, Nairda tilts their head)"
     nun "Irish Wolfhound."
     show drwolfe n at right with dissolve
-    po "Her ex was an Irish Wolfhound!"
+    mor "Her ex was an Irish Wolfhound!"
     show snun confused
     hubby "Jane Doe the cat was dating a dog? How odd!"
-    po "It's more common that you'd think actually..."
+    mor "It's more common that you'd think actually..."
     scene apartmenthalls
     "(Pointing to dirt on the floor, and a clump of freshly shed fur, Nairda knew they found the murderer)"
     show nun n at left with dissolve
     nun "That fur belongs to an Irish Wolfhound, and it was raining earlier. There's a faint smell of wet
     dog on the computer chair. He must have needed something from the computer but..."
     show drwolfe n at right with dissolve
-    po "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
-    "(Nairda interrupted the police officer)"
+    mor "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
+    "(Nairda interrupted the mortician)"
     nun "No, no no no I can't! I left the oven on! I can smell the gas from here!"
     "(Nairda quickly leaves the apartment whiles their partner follows behind)"
     scene apartmenthalls
@@ -115,12 +115,15 @@ label start:
     hubby "You can NOT smell gas! We live across town! And I TURNED OFF YOUR GAS SUPPLY BEFORE WE
     LEFT! YOU'RE INSUFFERABLE!"
     scene apartmenthalls
-    "(The police officers and detectives in the apartment look in shock and awe)"
-    show drwolfe n at right
-    po "So that's Nairda huh?"
-    show chief happy at left
+    "(The police officers, detectives, and mortician in the apartment look in shock and awe)"
+    show drwolfe shy at right
+    mor "So that's Nairda huh?"
+    show hare n at left
     d "Yeah, both impressive and kind of pathetic when you think about it"
-    po "I mean, he solved the case for us, you shouldn't be so harsh."
+    mor "I mean, he solved the case for us, you shouldn't be so harsh."
+    scene apartmenthalls
+    show drwolfe shy at right
+    show hare angry at left
     d "I don't know what it is but he just rubs me the wrong way"
 
     "(Another Case Closed)"

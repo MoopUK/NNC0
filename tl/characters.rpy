@@ -1,28 +1,30 @@
 # Script for all characters.
-# Defaulting player as not an imposter/not suspicious to 0,
+# Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default correct = 0
 
-# Give the info and colour for each character
+# Here you can give the info and colour of name tag for each character
 
-define GameDev = Character("Narrator") # Narrator for breaking the fourth wall
+# Narrator / The Game Developer (fourth-wall breaking character)
+define GameDev = Character("Narrator")
 
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
-# Husband of Nun
+# Husband of Nun - placeholder until physical character model received for editing
 define hubby = Character("Strudle", color="#FF0000")#Red
 
 # Late Police Detective Partner of Nun
 define np = Character("Nun's Partner", color="#99C55E")
+
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
 
 # Misc characters
-define a = Character("Alice", color="#33FFCC")#light blue
-define d = Character("Detective", color="#FFCC33")#yellow
-define po = Character("Police Officer", color="#800000")#maroon
+define a = Character("Alice", color="#33FFCC")#light blue # Museum Owner?
+define d = Character("Detective", color="#FFCC33")#yellow # Angry police detective
+define mor = Character("Mortician", color="#800000")#maroon # Mortician
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
 define ch = Character("Chief", color="FFFFFF")
@@ -39,6 +41,7 @@ define ch = Character("Chief", color="FFFFFF")
 # Nun (Main Character)
 image nun n:
     "nunneutral"
+    zoom 0.5
 image nun sad:
     "nunsad"
     zoom 0.5
@@ -189,21 +192,22 @@ image chief shy:
 
 # Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
 image hare n:
-    "nunsad"
+    "haren"
+    zoom 0.5
 image hare sad:
-    "nunsad"
+    "haresad"
     zoom 0.5
 image hare happy:
-    "nunhappy"
+    "harehappy"
     zoom 0.5
 image hare angry:
-    "nunangry"
+    "hareangry"
     zoom 0.5
 image hare confused:
-    "nunneutral"
+    "hareneutral"
     zoom 0.5
 image hare shy:
-    "nunshy"
+    "hareshy"
     zoom 0.5
 
 # Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
