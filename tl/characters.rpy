@@ -101,6 +101,7 @@ image drk shy:
 # Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
 image rec n:
     "receptionistn"
+    zoom 0.5
 image rec sad:
     "receptionistsad"
     zoom 0.5
@@ -120,16 +121,22 @@ image rec shy:
 # Tony (apartment neighbour)
 image tony n:
     "tonyneutral"
+    zoom 0.5
 image tony sad:
     "tonysad"
+    zoom 0.5
 image tony happy: #NEEDED
     "tonyshy"
+    zoom 0.5
 image tony angry:
     "tonyangry"
+    zoom 0.5
 image tony confused: #NEEDED
     "tonyshy"
+    zoom 0.5
 image tony shy:
     "tonyshy"
+    zoom 0.5
 
 # Ezekiel (Tony's nemesis and vice versa at apartments) PLACEHOLDERS REPLACEMENTS NEEDED
 image ez n:
@@ -159,7 +166,7 @@ image drwolfe sad:
     "drwolfesad"
     zoom 0.5
 image drwolfe happy:
-    "doctorwolfehappy"
+    "drwolfehappy"
     zoom 0.5
 image drwolfe angry:
     "drwolfeangry"
@@ -173,21 +180,22 @@ image drwolfe shy:
 
 # Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
 image chief n:
-    "policeman"
+    "placeholder"
+    zoom 0.5
 image chief sad:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief happy:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief angry:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief confused:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief shy:
-    "policeman"
+    "placeholder"
     zoom 0.5
 
 # Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
@@ -212,7 +220,8 @@ image hare shy:
 
 # Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
 image bruce n:
-    "nunsad"
+    "nunneutral"
+    zoom 0.5
 image bruce sad:
     "nunsad"
     zoom 0.5
@@ -227,4 +236,13 @@ image bruce confused:
     zoom 0.5
 image bruce shy:
     "nunshy"
+    zoom 0.5
+
+# MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
+image gun gun:
+    "gun"
+    zoom 0.5
+
+image opencab opencab:
+    "opencabinet"
     zoom 0.5

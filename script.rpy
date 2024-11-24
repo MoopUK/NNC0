@@ -173,6 +173,7 @@ label start:
     "(The receptionist looks up)"
     nun "It's 9 o'clock."
     "(The receptionist gives a known look and sighs quietly)"
+    show rec sad at right
     r "Yes, Mr Nun. I'm sure they'll be ready for you in a minute"
     nun "But my appointment starts at 9am, and it's 9 o'clock."
     "(She puts one of her paws over her face)"
@@ -180,6 +181,7 @@ label start:
     "(Nairda looks perplexed)"
     show nun sad at left
     nun "You're right, they will know what to do. Can you call them?"
+    show rec n at right
     r "Of course, let's call your husband"
     "(She dials Nairda's husband on the landline, she doesn't need to look it up anymore, this
     happens so often that it's commited to her memory)"
@@ -200,7 +202,7 @@ label start:
     nun "I bet it's Bruce!"
     "(Nairda looks at the receptionist)"
     nun "Is it? Is it Bruce?"
-    show rec happy at right
+    show rec angry at right
     "(She looks away)"
     r "You know I'm not allowed to discuss other patients with you, Mr Nun."
     "(Nairda looks at the receptionist, and then towards the therapist door, then
@@ -345,7 +347,7 @@ label start:
 # 3. Win / Fail the investigation
     scene apartmentdoor
     "(The phone rings)"
-    po "There's been a murder robbery at the museum of Frogs and Fancies"
+    d "There's been a murder robbery at the museum of Frogs and Fancies. The chief wants you to come over."
     show nun happy at left
     nun "We'll be right there!"
 
@@ -355,16 +357,18 @@ label start:
     show nun n at left
     nun "So what was stolen?"
     show drwolfe  n at right
-    po "A giant opal. It's not that an opal was stolen though, this opal has historical significance!"
+    mor "A giant opal. It's not that an opal was stolen though, this opal has historical significance!"
     "(They look around the room to check nobody is listening)"
-    po "It was the opal paid to the Frog King to end Frog War VI"
+    mor "It was the opal paid to the Frog King to end Frog War VI"
     "(Nairda remembers the history of Frog War VI, his father fought and died in Frog War VI when he was just a tadpole)"
     nun "How much was it worth?"
-    po "At least 12"
+    mor "At least 12"
     "(Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!)"
 
 # CRIME SCENE: Look around
-    po "The crime scene is just inside"
+    show hare n at right
+    d "Hurry up, the crime scene is just in here"
+    mor "Ah, yes yes. Let's go in."
     scene library
     "(Once inside, there's several forensic owls and several areas of interest)"
     show nun n at right
@@ -378,22 +382,23 @@ label start:
         "Go outside the building":
             $ correct = correct -1  #BAD choice!
             play sound "audio/no.mp3"
-            show drwolfe  n at right
-            po "Why are you going outside? The crime scene is in here!"
+            show hare  angry at right
+            d "Why are you going outside? The crime scene is in here!"
             "(Nairda is taken back inside and approaches the broken glass cabinet)"
             jump BrokenGlassCabinet
 
 # CRIME SCENE: Broken cabinet
 label BrokenGlassCabinet:
-    # scene lab
+    scene library
     show nun happy at left with dissolve
     show drwolfe  n at right
     nun "What was the glass was broken with?"
-    po "Well at first they tried their guns, but it's bullet proof glass so..."
+    mor "Well at first they tried their guns, but it's bullet proof glass so..."
     "(The police officer shrugs)"
     nun "At first? How did you figure out they used guns?"
-    po "They left the guns behind"
-    "(The police officer points to two discarded guns next to the cabinet)"
+    mor "They left the guns behind"
+    show gun gun
+    "(The police officer points to one of the discarded guns next to the cabinet)"
     nun "Interesting..."
     jump BackToTheCrimeScene
 
@@ -410,16 +415,17 @@ label BackToTheCrimeScene:
             show nun confused at left
             nun "The cabinet is missing an object..."
             show drwolfe  n at right
-            po "So it is! Good eye!"
+            mor "So it is! Good eye!"
             "(Nairda stares at the dust around the clean spot where the item used to be housed)"
             show nun n at left
             nun "Was it a mace?"
-            po "Well, this is where they kept the ye olde Frog War VI weapons, maces were a popular weapon
+            mor "Well, this is where they kept the ye olde Frog War VI weapons, maces were a popular weapon
             back in the day."
             menu:
                 "Check the lock":
                     $ correct = correct +1  #GOOD choice!
                     play sound "audio/yes.mp3"
+                    show opencab opencab
                     nun "It looks like it wasn't forced open..."
                     jump KeysUsed
                 "Go back to the scene":
@@ -437,7 +443,7 @@ label BackToTheCrimeScene:
             nun "Who wears boots?"
             nun "Unless they wanted to disgise what kind of feet they have!"
             show drwolfe angry at right
-            po "That's a good point! Only criminals use footwear!"
+            mor "That's a good point! Only criminals use footwear!"
         "Wet Floor Sign":
             $ correct = correct -1 #BAD choice!
             play sound "audio/no.mp3"
@@ -453,13 +459,13 @@ label KeysUsed:
             show nun happy at left
             nun "They had the key to the weapon display? The culprit works here!"
             show drwolfe happy at right
-            po "You're right! I'll go check who has a copy of the keys"
+            mor "You're right! I'll go check who has a copy of the keys"
             jump BackToTheCrimeScene2
         "Was it left unlocked?":
             show nun confused at left
             nun "Do you think this would be left unlocked?"
             show drwolfe n at right
-            po "It'd never be left unlocked! Everything here is a historical artifact, someone must have used a key!"
+            mor "It'd never be left unlocked! Everything here is a historical artifact, someone must have used a key!"
             jump BackToTheCrimeScene2
 
 # CRIME SCENE: NEXT PART
@@ -470,12 +476,16 @@ label BackToTheCrimeScene2:
         "CCTV Cameras":
             $ correct = correct +1 #Good Answer!
             play sound "audio/yes.mp3"
+            show nun confused at left
             nun "Wait, there's CCTV?"
-            po "The tapes have been deleted, we can't look at them"
+            show drwolfe sad at right
+            mor "The tapes have been deleted, we can't look at them"
             nun "Hmmmm...... How do you get into the CCTV room?"
-            po "We had to call a security guard in, they're one of the only people with keys and access"
+            mor "We had to call a security guard in, they're one of the only people with keys and access"
             nun "Who else has access?"
-            po "Security and the two caretakers"
+            show drwolfe n at right
+            show nun n at left
+            mor "Security and the two caretakers"
             jump caretakers
             label caretakers:
                 menu:
@@ -483,14 +493,14 @@ label BackToTheCrimeScene2:
                         scene library
                         $ correct = correct -1 #BAD Answer!
                         play sound "audio/no.mp3"
-                        show drwolfe angry with dissolve
-                        po "Why not? They didn't show up to work today"
+                        show hare angry with dissolve
+                        d "Why not? They didn't show up to work today"
                     "Where are the caretakers?":
                         $ correct = correct +1 #Good Answer!
                         play sound "audio/yes.mp3"
                         show drwolfe shy with dissolve
-                        po "Of course!"
-                        po "They didn't even show up to work today!"
+                        mor "Of course!"
+                        mor "They didn't even show up to work today!"
         "Shelf of dusty books":
             $ correct = correct -1 #BAD Answer!
             play sound "audio/no.mp3"
@@ -503,17 +513,19 @@ label BackToTheCrimeScene2:
     menu:
         "Ask about the Front Door lock":
             $ correct = correct +1 # GOOD Choice
+            show nun n at left
+            show drwolfe happy at right
             play sound "audio/yes.mp3"
             nun "Do you know if the front door lock was messed with?"
-            show drwolfe happy with dissolve
-            po "It was open when we got here, but it doesn't look like anybody messed with it..."
+            mor "It was open when we got here, but it doesn't look like anybody messed with it..."
+            nun "Interesting..."
 
         "Ask about the light switches":
             $ correct = correct -1 # BAD Choice
             play sound "audio/no.mp3"
             nun "Does this place have a light switch?"
-            show drwolfe n with dissolve
-            po "They're automatic lights, why?"
+            show hare n with dissolve
+            d "They're automatic lights, why?"
             nun "hmm... I dunno... fingerprints maybe..."
             "(Nairda feel like you might have missed out on some evidence)"
             "(It was probably nothing...)"
@@ -563,9 +575,9 @@ label bad_end:
     scene apartmenthalls
     show nun sad at right with dissolve
     nun "I feel like there were some clues I missed out on..."
-    show chief angry at left
-    ch "You failed to catch the criminals"
-    ch "I always knew you were an idiot"
+    show hare angry at left
+    d "You failed to catch the criminals"
+    d "I always knew you were an idiot"
     "(The case was left unsolved, and the giant opal was never found)"
     return
 
