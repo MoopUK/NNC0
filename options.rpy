@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -32,9 +32,9 @@ define config.version = "1.0"
 define gui.about = _p("""
 Game development: Kouda_Ha
 
-Character Drawings: Kouda_Ha
+Studio: Moop
 
-Photos of Sylvanian Families to use as placeholder character images: Kouda_Ha
+Photos of edited toys used as character models: Kouda_Ha
 
 Sound and BGM: Freesound.org && pixabay.com
 
@@ -46,7 +46,7 @@ Background Images used: https://neeka.itch.io/academia-background-pack-lite
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "NairdaNunChapterZero"
+define build.name = "NairdaNun_ChapterZero"
 
 
 ## Sounds and music ############################################################
