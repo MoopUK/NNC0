@@ -246,3 +246,13 @@ image gun gun:
 image opencab opencab:
     "opencabinet"
     zoom 0.5
+image boot boot:
+    "boot"
+    zoom 0.5
+
+image doorlock doorlock:
+    "doorlock"
+
+image mace mace:
+    "mace"
+    zoom 0.6

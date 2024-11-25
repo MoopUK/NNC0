@@ -416,14 +416,18 @@ label BackToTheCrimeScene:
             nun "The cabinet is missing an object..."
             show drwolfe  n at right
             mor "So it is! Good eye!"
+            show mace mace
             "(Nairda stares at the dust around the clean spot where the item used to be housed)"
             show nun n at left
             nun "Was it a mace?"
             mor "Well, this is where they kept the ye olde Frog War VI weapons, maces were a popular weapon
             back in the day."
+            scene library
             menu:
                 "Check the lock":
                     $ correct = correct +1  #GOOD choice!
+                    show nun n at left
+                    show drwolfe  n at right
                     play sound "audio/yes.mp3"
                     show opencab opencab
                     nun "It looks like it wasn't forced open..."
@@ -438,12 +442,14 @@ label BackToTheCrimeScene:
         "Boot print on the floor":
             $ correct = correct +1  #GOOD choice!
             play sound "audio/yes.mp3"
+            show boot boot
             "Looks like a boot print"
             show nun confused at left
             nun "Who wears boots?"
             nun "Unless they wanted to disgise what kind of feet they have!"
             show drwolfe angry at right
             mor "That's a good point! Only criminals use footwear!"
+            jump BackToTheCrimeScene2
         "Wet Floor Sign":
             $ correct = correct -1 #BAD choice!
             play sound "audio/no.mp3"
@@ -513,6 +519,7 @@ label BackToTheCrimeScene2:
     menu:
         "Ask about the Front Door lock":
             $ correct = correct +1 # GOOD Choice
+            show doorlock doorlock
             show nun n at left
             show drwolfe happy at right
             play sound "audio/yes.mp3"
