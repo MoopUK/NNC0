@@ -256,3 +256,6 @@ image doorlock doorlock:
 image mace mace:
     "mace"
     zoom 0.6
+
+image body body:
+    "body"

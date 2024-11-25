@@ -394,12 +394,28 @@ label BrokenGlassCabinet:
     show drwolfe  n at right
     nun "What was the glass was broken with?"
     mor "Well at first they tried their guns, but it's bullet proof glass so..."
-    "(The police officer shrugs)"
+    "(The mortician shrugs)"
     nun "At first? How did you figure out they used guns?"
-    mor "They left the guns behind"
+    mor "There's small imprints on the glass, oh, and they left the guns behind"
     show gun gun
-    "(The police officer points to one of the discarded guns next to the cabinet)"
+    "(The mortician points to the discarded guns next to the cabinet)"
     nun "Interesting..."
+    scene library
+    show nun happy at left
+    show drwolfe  n at right
+    mor "And another thing, they also used the guns to kill the security guard"
+    show body body
+    "(The mortician points to a dead body in the corner that had clearly been shot)"
+    scene library
+    show nun confused at left
+    show drwolfe n at right
+    show body body
+    nun "Shouldn't you be dealing with that instead of the robbery bit?"
+    show drwolfe shy at right
+    mor "I just... like watching you work"
+    show drwolfe happy at right
+    mor "Besides, it's not like he's going anywhere"
+    "(Nairda isn't sure what to think of this, and decides to just concentrate on the investigation at hand)"
     jump BackToTheCrimeScene
 
 # CRIME SCENE: NEXT PART
