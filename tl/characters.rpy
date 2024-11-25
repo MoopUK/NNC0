@@ -1,28 +1,30 @@
 # Script for all characters.
-# Defaulting player as not an imposter/not suspicious to 0,
+# Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default correct = 0
 
-# Give the info and colour for each character
+# Here you can give the info and colour of name tag for each character
 
-define GameDev = Character("Narrator") # Narrator for breaking the fourth wall
+# Narrator / The Game Developer (fourth-wall breaking character)
+define GameDev = Character("Narrator")
 
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
-# Husband of Nun
+# Husband of Nun - placeholder until physical character model received for editing
 define hubby = Character("Strudle", color="#FF0000")#Red
 
 # Late Police Detective Partner of Nun
 define np = Character("Nun's Partner", color="#99C55E")
+
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
 
 # Misc characters
-define a = Character("Alice", color="#33FFCC")#light blue
-define d = Character("Detective", color="#FFCC33")#yellow
-define po = Character("Police Officer", color="#800000")#maroon
+define a = Character("Alice", color="#33FFCC")#light blue # Museum Owner?
+define d = Character("Detective", color="#FFCC33")#yellow # Angry police detective
+define mor = Character("Mortician", color="#800000")#maroon # Mortician
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
 define ch = Character("Chief", color="FFFFFF")
@@ -39,6 +41,7 @@ define ch = Character("Chief", color="FFFFFF")
 # Nun (Main Character)
 image nun n:
     "nunneutral"
+    zoom 0.5
 image nun sad:
     "nunsad"
     zoom 0.5
@@ -77,56 +80,63 @@ image snun shy:
 
 # Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
 image drk n:
-    "drk"
+    "drkn"
     zoom 0.5
 image drk sad:
-    "drk"
+    "drksad"
     zoom 0.5
 image drk happy:
-    "drk"
+    "drkhappy"
     zoom 0.5
 image drk angry:
-    "drk"
+    "drkangry"
     zoom 0.5
 image drk confused:
-    "drk"
+    "drkconfused"
     zoom 0.5
 image drk shy:
-    "drk"
+    "drkshy"
     zoom 0.5
 
 # Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
 image rec n:
-    "receptionist"
+    "receptionistn"
+    zoom 0.5
 image rec sad:
-    "receptionist"
+    "receptionistsad"
     zoom 0.5
 image rec happy:
-    "receptionist"
+    "receptionisthappy"
     zoom 0.5
 image rec angry:
-    "receptionist"
+    "receptionistangry"
     zoom 0.5
-image rec confused: #NEEDED
-    "receptionist"
+image rec confused:
+    "receptionistconfused"
     zoom 0.5
 image rec shy:
-    "receptionist"
+    "receptionistshy"
     zoom 0.5
 
 # Tony (apartment neighbour)
 image tony n:
     "tonyneutral"
+    zoom 0.5
 image tony sad:
     "tonysad"
+    zoom 0.5
 image tony happy: #NEEDED
     "tonyshy"
+    zoom 0.5
 image tony angry:
     "tonyangry"
+    zoom 0.5
 image tony confused: #NEEDED
     "tonyshy"
+    zoom 0.5
 image tony shy:
     "tonyshy"
+    zoom 0.5
 
 # Ezekiel (Tony's nemesis and vice versa at apartments) PLACEHOLDERS REPLACEMENTS NEEDED
 image ez n:
@@ -156,12 +166,12 @@ image drwolfe sad:
     "drwolfesad"
     zoom 0.5
 image drwolfe happy:
-    "doctorwolfehappy"
+    "drwolfehappy"
     zoom 0.5
 image drwolfe angry:
     "drwolfeangry"
     zoom 0.5
-image drwolfe confused: #NEEDED
+image drwolfe confused:
     "drwolfeconfused"
     zoom 0.5
 image drwolfe shy:
@@ -170,57 +180,84 @@ image drwolfe shy:
 
 # Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
 image chief n:
-    "policeman"
+    "placeholder"
+    zoom 0.5
 image chief sad:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief happy:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief angry:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief confused:
-    "policeman"
+    "placeholder"
     zoom 0.5
 image chief shy:
-    "policeman"
+    "placeholder"
     zoom 0.5
 
 # Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
 image hare n:
-    "nunsad"
+    "haren"
+    zoom 0.5
 image hare sad:
-    "nunsad"
+    "haresad"
     zoom 0.5
 image hare happy:
-    "nunhappy"
+    "harehappy"
     zoom 0.5
 image hare angry:
-    "nunangry"
+    "hareangry"
     zoom 0.5
 image hare confused:
-    "nunneutral"
+    "hareneutral"
     zoom 0.5
 image hare shy:
-    "nunshy"
+    "hareshy"
     zoom 0.5
 
 # Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
 image bruce n:
-    "nunsad"
-image hare sad:
-    "nunsad"
-    zoom 0.5
-image hare happy:
-    "nunhappy"
-    zoom 0.5
-image hare angry:
-    "nunangry"
-    zoom 0.5
-image hare confused:
     "nunneutral"
     zoom 0.5
-image hare shy:
+image bruce sad:
+    "nunsad"
+    zoom 0.5
+image bruce happy:
+    "nunhappy"
+    zoom 0.5
+image bruce angry:
+    "nunangry"
+    zoom 0.5
+image bruce confused:
+    "nunneutral"
+    zoom 0.5
+image bruce shy:
     "nunshy"
     zoom 0.5
+
+# MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
+image gun gun:
+    "gun"
+    zoom 0.5
+
+image opencab opencab:
+    "opencabinet"
+    zoom 0.5
+    
+image boot boot:
+    "boot"
+    zoom 0.5
+
+image doorlock doorlock:
+    "doorlock"
+    zoom 0.65
+
+image mace mace:
+    "mace"
+    zoom 0.6
+
+image body body:
+    "body"
