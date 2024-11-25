@@ -45,23 +45,24 @@ label start:
     "Only fake ones."
     scene apartmenthalls
     play music "audio/cafe.mp3"
-    show nun n at left with dissolve
-
+    show nun n at left
     "(Looking at the dead body, Nairda whispers to themself)"
+    show nun confused at left
     nun "I think I left my oven on..."
     "(Their partner sighs deeply)"
-    show snun angry at right with dissolve
+    show snun angry at right
+    show nun n at left
     hubby "No no... I turned everything off before we left"
     "(Nairda looks around the room, then turns back to their partner)"
-    show nun sad at left with dissolve
+    show nun sad at left
     nun "Are you sure?"
-    show snun happy at right with dissolve
+    show snun happy at right
     hubby "Yes, I'm sure. I even disconnected the gas for you so you don't have to worry about anything"
-    show nun n at left with dissolve
+    show nun n at left
     nun "Well, in that case..."
     scene apartmenthalls
     "(A deep pause entered the apartment, everyone stopped talking to watch Nairda solve the case...)"
-    show nun n at left with dissolve
+    show nun n at left
     nun "The murderer wore slippers to not leave paw prints...
     They were waiting for her for at least an hour, and smoked! Horribly cheap cigarettes, terrible stuff..."
     "(They continue)"
@@ -69,19 +70,21 @@ label start:
     nun "After they killed Jane Doe, they checked her computer. Look at the chair,
     it's way too tall for a cat! The killer has to be at least 2ft 4... very tall, not a frog..."
     scene apartmenthalls
-    show nun n at left with dissolve
-    show drwolfe confused at right with dissolve
+    show nun n at left
+    show drwolfe confused at right
     mor "This is her apartment, isn't it? Why are we calling her a Jane Doe? Don't we have an ID?"
     nun "Yes, we do."
     play sound "audio/paper.mp3"
     "(Nairda passes her passport and several opened letter off to table to the mortician)"
     nun "It's Jane Doe"
-    show drwolfe sad at right with dissolve
+    show drwolfe sad at right
     "(The mortician looks at the victim's passport and opened letters)"
     mor "Damn, imagine calling you child the general term used for when we can't ID someone...
     They must have hated her"
+    show nun angry at left
     nun "Can I finish? I think I left my oven on, so I want to make this quick"
-    show drwolfe shy at right with dissolve
+    show drwolfe shy at right
+    show nun n at left
     mor "Oh, yeah... sorry... How do you know they used the laptop?"
     show snun angry at right
     hubby "It isn't on! And I turned off the gas, remember?"
@@ -95,22 +98,23 @@ label start:
     nun "A dog. The murderer is a dog."
     "(Looking at the floor next to the window, Nairda tilts their head)"
     nun "Irish Wolfhound."
-    show drwolfe n at right with dissolve
+    show drwolfe n at right
     mor "Her ex was an Irish Wolfhound!"
     show snun confused
     hubby "Jane Doe the cat was dating a dog? How odd!"
     mor "It's more common that you'd think actually..."
     scene apartmenthalls
     "(Pointing to dirt on the floor, and a clump of freshly shed fur, Nairda knew they found the murderer)"
-    show nun n at left with dissolve
+    show nun n at left
     nun "That fur belongs to an Irish Wolfhound, and it was raining earlier. There's a faint smell of wet
     dog on the computer chair. He must have needed something from the computer but..."
-    show drwolfe n at right with dissolve
+    show drwolfe n at right
     mor "We can call the computer guys, see if there's a motive on there... Would you like to wait and.."
     "(Nairda interrupted the mortician)"
+    show nun angry at left
     nun "No, no no no I can't! I left the oven on! I can smell the gas from here!"
-    "(Nairda quickly leaves the apartment whiles their partner follows behind)"
     scene apartmenthalls
+    "(Nairda quickly leaves the apartment whiles their partner follows behind)"
     show snun angry
     hubby "You can NOT smell gas! We live across town! And I TURNED OFF YOUR GAS SUPPLY BEFORE WE
     LEFT! YOU'RE INSUFFERABLE!"
@@ -130,7 +134,7 @@ label start:
 
     scene apartmentdoor
     "(Nairda Nun returns to his apartment building and see's his neighbour outside)"
-    show nun happy
+    show nun n
     nun "Hello, Tony!"
     show tony shy at left
     t "Hello, Mr Nairda!"
@@ -153,7 +157,7 @@ label start:
     "(Naida's partner comes running up behind them)"
     scene apartmentdoor
     show nun happy at right
-    show snun n at left
+    show snun confused at left
     hubby "How did you get home before me? I drove and you RAN!?!"
     nun "I just... need to check if the oven is on"
     show snun angry at left
@@ -199,8 +203,10 @@ label start:
     show nun sad at left
     nun "Hello Strudel, my appointment starts at 9am, Dr Krieger knows it starts at 9am,
     I'm not sure what they could be doing but she knows it's 9am..."
+    show nun angry at left
     nun "I bet it's Bruce!"
     "(Nairda looks at the receptionist)"
+    show nun n at left
     nun "Is it? Is it Bruce?"
     show rec angry at right
     "(She looks away)"
@@ -238,8 +244,10 @@ label start:
     drk "It wasn't on purpose, no. Would you like me to fix it?"
     nun "No no, it's fine. It doesn't bother me, it's fine..."
     "(Nairda tries to look away but the compusion to correct the sofa is killing him)"
+    show nun n at right
     nun "It's just... it doesn't bother me but it looks untidy..."
     "(Nairda goes over to the sofa and straightens the cushions)"
+    show nun happy at right
     nun "It doesn't bother me, it just looks untidy, you don't want people to think your
     therapy office is untidy... It'll look unprofessional..."
     scene messhall
@@ -335,7 +343,7 @@ label start:
     show nun sad at left
     show snun sad at right
     hubby "Of course! Let's go home."
-    "(The Next Day)"
+
 # Therapy End
 
 
@@ -346,10 +354,12 @@ label start:
 # historical backstory.
 # 3. Win / Fail the investigation
     scene apartmentdoor
+    "(The Next Day)"
     "(The phone rings)"
     d "There's been a murder robbery at the museum of Frogs and Fancies. The chief wants you to come over."
     show nun happy at left
     nun "We'll be right there!"
+    "(After a short drive Nairda and Strudle make it to the Museum of Frogs and Fancies)"
 
 # Start of correct and incorrect answers in investigation
 
@@ -390,7 +400,7 @@ label start:
 # CRIME SCENE: Broken cabinet
 label BrokenGlassCabinet:
     scene library
-    show nun happy at left with dissolve
+    show nun happy at left
     show drwolfe  n at right
     nun "What was the glass was broken with?"
     mor "Well at first they tried their guns, but it's bullet proof glass so..."
@@ -415,6 +425,9 @@ label BrokenGlassCabinet:
     mor "I just... like watching you work. It's like a TV show!"
     show drwolfe happy at right
     mor "Besides, it's not like he's going anywhere"
+    scene library
+    show nun n at left
+    show drwolfe n at right
     "(Nairda isn't sure what to think of this, and decides to just concentrate on the investigation at hand)"
     jump BackToTheCrimeScene
 
@@ -427,7 +440,7 @@ label BackToTheCrimeScene:
         "Open cabinet across the room":
             $ correct = correct +1  #GOOD choice!
             play sound "audio/yes.mp3"
-            "Nairda looks at the open cabinet across the room"
+            "(Nairda looks at the open cabinet across the room)"
             show nun confused at left
             nun "The cabinet is missing an object..."
             show drwolfe  n at right
@@ -459,7 +472,7 @@ label BackToTheCrimeScene:
             $ correct = correct +1  #GOOD choice!
             play sound "audio/yes.mp3"
             show boot boot
-            "Looks like a boot print"
+            "(Looks like a boot print)"
             show nun confused at left
             nun "Who wears boots?"
             nun "Unless they wanted to disgise what kind of feet they have!"
@@ -502,6 +515,7 @@ label BackToTheCrimeScene2:
             nun "Wait, there's CCTV?"
             show drwolfe sad at right
             mor "The tapes have been deleted, we can't look at them"
+            show nun n at left
             nun "Hmmmm...... How do you get into the CCTV room?"
             mor "We had to call a security guard in, they're one of the only people with keys and access"
             nun "Who else has access?"
@@ -515,12 +529,12 @@ label BackToTheCrimeScene2:
                         scene library
                         $ correct = correct -1 #BAD Answer!
                         play sound "audio/no.mp3"
-                        show hare angry with dissolve
+                        show hare angry
                         d "Why not? They didn't show up to work today"
                     "Where are the caretakers?":
                         $ correct = correct +1 #Good Answer!
                         play sound "audio/yes.mp3"
-                        show drwolfe shy with dissolve
+                        show drwolfe shy
                         mor "Of course!"
                         mor "They didn't even show up to work today!"
         "Shelf of dusty books":
@@ -547,7 +561,7 @@ label BackToTheCrimeScene2:
             $ correct = correct -1 # BAD Choice
             play sound "audio/no.mp3"
             nun "Does this place have a light switch?"
-            show hare n with dissolve
+            show hare n
             d "They're automatic lights, why?"
             nun "hmm... I dunno... fingerprints maybe..."
             "(Nairda feel like you might have missed out on some evidence)"
@@ -571,12 +585,12 @@ label BackToTheCrimeScene2:
 # GOOD ENDING
 label good_end:
     scene lab
-    show nun happy at left with dissolve
+    show nun n at left
     nun "The criminals were the caretakers at the Museum of Frogs and Fancies!"
+    show nun happy at left
     nun "Here's what happ..."
-    GameDev "Shhh! Do you want me to get sued? Say something else!"
-    scene lab
     show nun confused at left
+    GameDev "Shhh! Do you want me to get sued? Say something else!"
     "(Nairda feels like they just heard the wrath of a... god? Actually, come to think of it, it sounded more like a sleep deprived games developer)"
     nun "(gulp)"
     scene lab
@@ -599,7 +613,6 @@ label good_end:
     nun "With no forced entry, no CCTV footage, no locks broken on the cabinets... it was obvious they must work here!"
     nun "If they'd shot the weapon display open, or any of the locks! We probably wouldn't have clicked that the people worked here"
     scene lab
-    show nun n at left
     "(The case was solved, shortly after giving in your report the two caretakers were found making a run for the hills)"
     "(Literally! The police have no jurisdiction on hills, nobody is sure why hills are a safe haven for crimes, probably a stupid old law, but thankfully they were caught before they made it to one)"
     scene lab
@@ -610,7 +623,7 @@ label good_end:
 # BAD ENDING
 label bad_end:
     scene apartmenthalls
-    show nun sad at right with dissolve
+    show nun sad at right
     nun "I feel like there were some clues I missed out on..."
     show hare angry at left
     d "You failed to catch the criminals"
