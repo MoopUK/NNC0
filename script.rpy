@@ -366,7 +366,7 @@ label start:
     "(Nairda twitches at the thought of having that much money, enough for a private pond at the Toadstool!)"
 
 # CRIME SCENE: Look around
-    show hare n at right
+    show hare n
     d "Hurry up, the crime scene is just in here"
     mor "Ah, yes yes. Let's go in."
     scene library
@@ -403,7 +403,7 @@ label BrokenGlassCabinet:
     scene library
     show nun happy at left
     show drwolfe  n at right
-    mor "And another thing, they also used the guns to kill the security guard"
+    mor "Oh, and one more thing, they also used those guns to kill the security guard"
     show body body
     "(The mortician points to a dead body in the corner that had clearly been shot)"
     scene library
@@ -412,7 +412,7 @@ label BrokenGlassCabinet:
     show body body
     nun "Shouldn't you be dealing with that instead of the robbery bit?"
     show drwolfe shy at right
-    mor "I just... like watching you work"
+    mor "I just... like watching you work. It's like a TV show!"
     show drwolfe happy at right
     mor "Besides, it's not like he's going anywhere"
     "(Nairda isn't sure what to think of this, and decides to just concentrate on the investigation at hand)"
@@ -583,13 +583,27 @@ label good_end:
     show nun n at left
     nun "Here's... a summary of the crime?"
     "(Nairda looks around, seemingly safe to continue)"
+    show boot boot
     nun "The caretakers snuck in after hours, wearing shoes to hide their foot prints"
+    scene lab
+    show nun n at left
+    show gun gun
     nun "but they couldn't shoot open the case with their guns due to the bullet-proof glass"
+    scene lab
+    show nun n at left
+    show mace mace
     nun "they needed to use something sturdier, like the maces kept in the weapons display!"
+    scene lab
+    show nun n at left
+    show opencab opencab
     nun "With no forced entry, no CCTV footage, no locks broken on the cabinets... it was obvious they must work here!"
     nun "If they'd shot the weapon display open, or any of the locks! We probably wouldn't have clicked that the people worked here"
+    scene lab
+    show nun n at left
     "(The case was solved, shortly after giving in your report the two caretakers were found making a run for the hills)"
     "(Literally! The police have no jurisdiction on hills, nobody is sure why hills are a safe haven for crimes, probably a stupid old law, but thankfully they were caught before they made it to one)"
+    scene lab
+    show nun happy
     "(Well done, Nairda.)"
     return
 
